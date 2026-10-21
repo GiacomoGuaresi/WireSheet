@@ -1,7 +1,7 @@
 name: Release
 
 # Un tag vX.Y.Z crea la release con gli eseguibili per Windows e macOS.
-# Il tag deve corrispondere a __version__ in wiresheet/__init__.py.
+# Il tag deve corrispondere a __version__ in wiresheet/__init__.py e avere una sezione in CHANGELOG.md.
 # Da Actions → Release → "Run workflow" si ottengono solo gli artifact, senza release.
 on:
   push:
@@ -18,54 +18,95 @@ jobs:
       matrix:
         include:
           - os: windows-latest
-            asset: WireSheet-windows-x64.zip
+            platform: windows-x64
           - os: macos-latest
-            asset: WireSheet-macos-arm64.zip
+            platform: macos-arm64
     runs-on: ${{ matrix.os }}
     env:
       QT_QPA_PLATFORM: offscreen
+    defaults:
+      run:
+        shell: bash
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: pip
-      - name: Il tag corrisponde a __version__
-        if: github.ref_type == 'tag'
-        shell: bash
+
+      - name: Versione
         run: |
           version=$(python -c "import wiresheet; print(wiresheet.__version__)")
-          if [ "v$version" != "$GITHUB_REF_NAME" ]; then
+          if [ "$GITHUB_REF_TYPE" = "tag" ] && [ "v$version" != "$GITHUB_REF_NAME" ]; then
             echo "::error::Il tag $GITHUB_REF_NAME non corrisponde a __version__ = $version (wiresheet/__init__.py)"
             exit 1
           fi
+          echo "ASSET=WireSheet-$version-${{ matrix.platform }}.zip" >> "$GITHUB_ENV"
+
       - run: python -m pip install -r requirements.txt pyinstaller pillow
       - run: python -m pytest -q
       - run: pyinstaller --noconfirm packaging/wiresheet.spec
 
+      - name: Smoke test Windows
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          # exe senza console: Start-Process aspetta la fine e restituisce il codice di uscita
+          $p = Start-Process dist/WireSheet/WireSheet.exe -ArgumentList '--self-test', 'self-test' -Wait -PassThru
+          if ($p.ExitCode -ne 0) { Get-Content self-test/self-test-error.txt -ErrorAction SilentlyContinue; exit 1 }
+          if ((Get-Item self-test/demo.pdf).Length -eq 0 -or (Get-Item self-test/template.xlsx).Length -eq 0) { exit 1 }
+
+      - name: Smoke test macOS
+        if: runner.os == 'macOS'
+        run: |
+          dist/WireSheet.app/Contents/MacOS/WireSheet --self-test self-test
+          test -s self-test/demo.pdf && test -s self-test/template.xlsx
+
       - name: Pacchetto Windows
         if: runner.os == 'Windows'
         shell: pwsh
-        run: Compress-Archive -Path dist/WireSheet.exe -DestinationPath ${{ matrix.asset }}
+        run: Compress-Archive -Path dist/WireSheet -DestinationPath $env:ASSET
 
       - name: Pacchetto macOS
         if: runner.os == 'macOS'
-        run: ditto -c -k --keepParent dist/WireSheet.app ${{ matrix.asset }}
+        run: ditto -c -k --keepParent dist/WireSheet.app "$ASSET"
 
       - uses: actions/upload-artifact@v4
         with:
-          name: ${{ matrix.asset }}
-          path: ${{ matrix.asset }}
+          name: ${{ matrix.platform }}
+          path: ${{ env.ASSET }}
 
   release:
     if: github.ref_type == 'tag'
     needs: build
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
         with:
+          path: assets
           merge-multiple: true
+
+      - name: Note di rilascio dal CHANGELOG
+        run: |
+          version="${GITHUB_REF_NAME#v}"
+          awk -v v="$version" '
+            /^## \[/ { found = index($0, "## [" v "]") == 1; next }
+            /^\[[^]]+\]: / { next }
+            found
+          ' CHANGELOG.md > notes.md
+          if ! grep -q '[^[:space:]]' notes.md; then
+            echo "::error::Nessuna sezione [$version] in CHANGELOG.md"
+            exit 1
+          fi
+
+      - name: Checksum
+        working-directory: assets
+        run: sha256sum WireSheet-*.zip > SHA256SUMS.txt
+
       - uses: softprops/action-gh-release@v2
         with:
-          files: WireSheet-*.zip
-          generate_release_notes: true
+          body_path: notes.md
+          files: |
+            assets/WireSheet-*.zip
+            assets/SHA256SUMS.txt

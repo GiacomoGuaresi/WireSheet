@@ -30,7 +30,7 @@ def test_non_ascii_title(tmp_path):
 
 def test_title_block_fields_saved(tmp_path):
     path = tmp_path / "p.wiresheet"
-    project = Project(title="T", company="Ginger Additive", machine="G1", revision=3,
+    project = Project(title="T", company="ACME Srl", machine="G1", revision=3,
                       date="2026-10-20", drawn_by="DM")
     save_project(project, path)
     assert load_project(path) == project

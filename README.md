@@ -4,6 +4,8 @@
 
 <h1 align="center">WireSheet</h1>
 
+<p align="center"><b>🇮🇹 Italiano</b> · <a href="README.en.md">🇬🇧 English</a></p>
+
 <p align="center">
   Programma desktop per disegnare <b>tavole di cablaggio</b> e esportarle in PDF:<br>
   estremità 1 → fili → estremità 2, con etichette, WIRE LIST e cartiglio.
@@ -11,7 +13,7 @@
 
 <p align="center">
   <a href="https://github.com/GiacomoGuaresi/WireSheet/actions/workflows/ci.yml"><img src="https://github.com/GiacomoGuaresi/WireSheet/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
-  <a href="https://github.com/GiacomoGuaresi/WireSheet/releases/latest"><img src="https://img.shields.io/github/v/release/GiacomoGuaresi/WireSheet?include_prereleases" alt="Release"></a>
+  <a href="https://github.com/GiacomoGuaresi/WireSheet/releases/latest"><img src="https://img.shields.io/github/v/release/GiacomoGuaresi/WireSheet" alt="Release"></a>
   <img src="https://img.shields.io/badge/python-3.12-blue" alt="Python 3.12">
   <img src="https://img.shields.io/badge/platform-Windows%20%7C%20macOS-lightgrey" alt="Windows | macOS">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="MIT"></a>
@@ -44,12 +46,15 @@ Gli eseguibili sono nella pagina [Releases](https://github.com/GiacomoGuaresi/Wi
 
 | Sistema | File |
 |---|---|
-| Windows 10/11 (x64) | `WireSheet-windows-x64.zip` → contiene `WireSheet.exe` |
-| macOS (Apple Silicon) | `WireSheet-macos-arm64.zip` → contiene `WireSheet.app` |
+| Windows 10/11 (x64) | `WireSheet-<versione>-windows-x64.zip`: scompatta la cartella `WireSheet` dove vuoi e avvia `WireSheet.exe` |
+| macOS 11+ (Apple Silicon, M1 e successivi) | `WireSheet-<versione>-macos-arm64.zip`: scompatta e sposta `WireSheet.app` in *Applicazioni* |
+
+Sui Mac con processore Intel, e su Linux, WireSheet si avvia [da sorgente](#avvio-da-sorgente). `SHA256SUMS.txt` contiene i checksum dei file.
 
 > [!NOTE]
-> Gli eseguibili non sono firmati. Su **Windows**, se SmartScreen blocca l'avvio, scegli *Ulteriori informazioni → Esegui comunque*.
-> Su **macOS**, al primo avvio fai clic destro su `WireSheet.app` → *Apri*, oppure esegui `xattr -cr WireSheet.app`.
+> Gli eseguibili non sono firmati, quindi al primo avvio il sistema chiede conferma:
+> - **Windows**: se SmartScreen blocca l'avvio, scegli *Ulteriori informazioni → Esegui comunque*.
+> - **macOS**: apri `WireSheet.app`, chiudi l'avviso, poi vai in *Impostazioni di Sistema → Privacy e sicurezza* e scegli *Apri comunque*. In alternativa, da Terminale: `xattr -dr com.apple.quarantine /Applications/WireSheet.app`.
 
 ## Avvio da sorgente
 
@@ -83,17 +88,17 @@ Gli eseguibili si creano con [PyInstaller](https://pyinstaller.org/) a partire d
 
 ```bash
 python -m pip install pyinstaller pillow
-pyinstaller --noconfirm packaging/wiresheet.spec   # → dist/WireSheet.exe oppure dist/WireSheet.app
+pyinstaller --noconfirm packaging/wiresheet.spec   # → dist/WireSheet/WireSheet.exe oppure dist/WireSheet.app
 ```
 
-PyInstaller non fa cross-compilazione: l'`.exe` si crea su Windows, l'`.app` su macOS.
+PyInstaller non fa cross-compilazione: l'`.exe` si crea su Windows, l'`.app` su macOS. Per controllare un eseguibile senza aprire la finestra c'è lo smoke test `WireSheet --self-test <cartella>`: esporta il PDF demo e il template Excel ed esce con 0 se è tutto a posto.
 
 ### Pipeline
 
 - **CI** ([`ci.yml`](.github/workflows/ci.yml)): a ogni push su `main` e a ogni pull request esegue i test su Windows e macOS.
-- **Release** ([`release.yml`](.github/workflows/release.yml)): al push di un tag `v*` controlla che corrisponda alla versione dell'app, esegue i test, crea gli eseguibili per Windows e macOS e pubblica una GitHub Release con le note generate dai commit.
+- **Release** ([`release.yml`](.github/workflows/release.yml)): al push di un tag `v*` controlla che corrisponda alla versione dell'app, esegue i test, crea gli eseguibili per Windows e macOS, li prova con lo smoke test e pubblica una GitHub Release con gli zip, i checksum e le note prese da [`CHANGELOG.md`](CHANGELOG.md).
 
-La versione si cambia solo in [`wiresheet/__init__.py`](wiresheet/__init__.py) (`__version__`); poi si crea il tag corrispondente:
+Per una nuova versione: aggiorna `__version__` in [`wiresheet/__init__.py`](wiresheet/__init__.py), aggiungi la sezione in [`CHANGELOG.md`](CHANGELOG.md) e crea il tag corrispondente:
 
 ```bash
 git commit -am "Versione 1.0.1" && git push
@@ -105,7 +110,7 @@ Dalla scheda *Actions* si può anche lanciare *Release* a mano per ottenere gli 
 
 ## Documentazione
 
-La documentazione (in italiano) è in [`docs/`](docs/README.md):
+La documentazione e l'interfaccia del programma sono in italiano. La documentazione è in [`docs/`](docs/README.md):
 
 | Documento | Contenuto |
 |---|---|

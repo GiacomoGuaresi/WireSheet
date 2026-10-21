@@ -1,4 +1,4 @@
-# Build: pyinstaller packaging/wiresheet.spec  ->  dist/WireSheet (.exe su Windows, .app su macOS)
+# Build: pyinstaller packaging/wiresheet.spec  ->  dist/WireSheet/WireSheet.exe (Windows), dist/WireSheet.app (macOS)
 import sys
 from pathlib import Path
 
@@ -57,14 +57,13 @@ a = Analysis(
 )
 pyz = PYZ(a.pure)
 
+# cartella dist/WireSheet (exe + _internal): parte subito, a differenza dell'exe singolo
+exe = EXE(pyz, a.scripts, [], exclude_binaries=True, name="WireSheet", console=False, icon=icon,
+          version=None if sys.platform == "darwin" else windows_version_file())
+coll = COLLECT(exe, a.binaries, a.datas, name="WireSheet")
+
 if sys.platform == "darwin":
-    exe = EXE(pyz, a.scripts, [], exclude_binaries=True, name="WireSheet",
-              console=False, icon=icon)
-    coll = COLLECT(exe, a.binaries, a.datas, name="WireSheet")
     app = BUNDLE(coll, name="WireSheet.app", icon=icon, bundle_identifier="com.giacomoguaresi.wiresheet",
                  info_plist={"NSHighResolutionCapable": True,
                              "CFBundleShortVersionString": VERSION,
                              "CFBundleVersion": VERSION})
-else:
-    exe = EXE(pyz, a.scripts, a.binaries, a.datas, [], name="WireSheet",
-              console=False, icon=icon, version=windows_version_file())

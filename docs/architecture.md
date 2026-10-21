@@ -5,9 +5,9 @@ WireSheet/
   requirements.txt
   .github/workflows/
     ci.yml               # test su Windows e macOS a ogni push / pull request
-    release.yml          # tag v* → test, build PyInstaller, GitHub Release
+    release.yml          # tag v* → test, build PyInstaller, smoke test, GitHub Release con le note del CHANGELOG
   packaging/
-    wiresheet.spec       # build PyInstaller: WireSheet.exe (Windows) / WireSheet.app (macOS)
+    wiresheet.spec       # build PyInstaller: dist/WireSheet/WireSheet.exe (Windows) / WireSheet.app (macOS)
     launcher.py          # punto di ingresso dell'eseguibile
   wiresheet/
     __init__.py          # __version__ (unica fonte della versione) e indirizzo del repository
@@ -22,7 +22,7 @@ WireSheet/
       sheet_layout.py    # impaginazione su fogli verticali: cornice, cartiglio
     pdf_export.py        # export PDF del progetto (QPdfWriter, A3 verticale)
     demo.py              # script con cavi di esempio
-    __main__.py          # avvio dell'applicazione (python -m wiresheet [file]), icona della finestra
+    __main__.py          # avvio dell'applicazione (python -m wiresheet [file]), icona della finestra, --self-test
     resources/
       icon.svg           # icona dell'app (connettore + tre fili con puntalini)
       icon.ico           # stessa icona 16-256 px per Windows / PyInstaller, generata da tools/make_icon.py

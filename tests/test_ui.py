@@ -412,7 +412,7 @@ def test_remove_branch_moves_wires_to_first(window):
 
 def test_title_block_fields(window):
     window.set_preview_mode(MODE_SHEET)
-    window.apply_title_block({"title": "Pannello", "company": "Ginger Additive", "revision": 4})
+    window.apply_title_block({"title": "Pannello", "company": "ACME Srl", "revision": 4})
     assert window.project.title == "Pannello" and window.project.revision == 4
     assert window.title_edit.text() == "Pannello"
     assert window._dirty

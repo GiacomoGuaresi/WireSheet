@@ -154,6 +154,10 @@ Esempi dall'elenco cavi: `FANS, MAT SENSOR` (GM-1712/S-7P → XH-2, morsettiera 
 - [x] Release: tag `v*` → eseguibili PyInstaller (`WireSheet.exe`, `WireSheet.app`) allegati alla GitHub Release
 - [x] **v1.0.0**: versione in `wiresheet/__init__.py` (finestra Informazioni, Info.plist, proprietà dell'`.exe`); la pipeline rifiuta i tag che non corrispondono
 - [x] Controllo aggiornamenti dal menu Aiuto e all'avvio (disattivabile): se c'è una release più recente chiede se aprire la pagina di download
+- [x] Windows distribuito come cartella zip (avvio rapido, meno falsi positivi degli antivirus); macOS solo Apple Silicon
+- [x] Smoke test degli eseguibili in pipeline (`--self-test`: PDF demo + template Excel)
+- [x] `CHANGELOG.md` come testo delle release; asset con la versione nel nome e `SHA256SUMS.txt`
+- [x] README anche in inglese; demo e test con un'azienda di fantasia
 
 ## ⏳ Prossimo passo
 
@@ -162,6 +166,9 @@ Esempi dall'elenco cavi: `FANS, MAT SENSOR` (GM-1712/S-7P → XH-2, morsettiera 
 
 ## 💡 Idee future (quando serviranno)
 
+- Firma e notarizzazione degli eseguibili (Apple Developer ID, certificato di code signing per Windows)
+- Doppio clic sui file `.wiresheet` (Finder: `QFileOpenEvent` + `CFBundleDocumentTypes`; associazione dei file su Windows)
+- Eseguibili per Mac Intel e Linux
 - Lingua dei testi IT/EN selezionabile all'export
 - Libreria componenti modificabile (codici, terminali di default)
 - Altri connettori: altre serie JST

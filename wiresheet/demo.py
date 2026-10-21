@@ -47,7 +47,7 @@ def demo_cables(branched: bool = True) -> list[Cable]:
 
 
 def demo_project(branched: bool = True) -> Project:
-    return Project(title="Cavi di esempio", company="Ginger Additive", machine="DEMO", revision=1,
+    return Project(title="Cavi di esempio", company="ACME Srl", machine="DEMO", revision=1,
                    date="2026-10-20", drawn_by="WireSheet", cables=demo_cables(branched))
 
 

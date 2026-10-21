@@ -76,7 +76,7 @@ Tutti i campi del cartiglio sono facoltativi; una casella vuota resta vuota nel 
   "format": "wiresheet",
   "version": 2,
   "title": "Cablaggio stampante",
-  "company": "Ginger Additive",
+  "company": "ACME Srl",
   "machine": "G1",
   "revision": 3,
   "date": "2026-10-20",

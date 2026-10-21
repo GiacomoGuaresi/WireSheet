@@ -72,10 +72,12 @@ I test di rendering usano la piattaforma Qt `offscreen`, quindi non serve un dis
 .\.venv\Scripts\pyinstaller.exe --noconfirm packaging/wiresheet.spec
 ```
 
-Il risultato è in `dist/`: `WireSheet.exe` su Windows, `WireSheet.app` su macOS (PyInstaller non fa cross-compilazione). Pillow serve su macOS per convertire l'icona in `.icns`.
+Il risultato è in `dist/`: la cartella `WireSheet/` con `WireSheet.exe` su Windows, `WireSheet.app` su macOS (PyInstaller non fa cross-compilazione). Pillow serve su macOS per convertire l'icona in `.icns`.
+
+Smoke test dell'eseguibile, senza aprire la finestra: `WireSheet --self-test <cartella>` esporta il PDF demo e il template Excel, li reimporta ed esce con 0 se è tutto a posto (con 1 e `self-test-error.txt` se qualcosa manca nel pacchetto).
 
 ## Release
 
 La versione è scritta solo in `__version__` in [`wiresheet/__init__.py`](../wiresheet/__init__.py): la leggono la finestra Informazioni, il controllo aggiornamenti e la build (Info.plist su macOS, proprietà del file `.exe` su Windows).
 
-Per pubblicare una versione: aggiorna `__version__`, fai commit e push, poi crea il tag corrispondente (es. `git tag v1.0.1 && git push origin v1.0.1`). La pipeline [`.github/workflows/release.yml`](../.github/workflows/release.yml) controlla che il tag corrisponda a `__version__`, esegue i test, crea gli eseguibili su Windows e macOS e pubblica la GitHub Release con i due zip. La pipeline [`ci.yml`](../.github/workflows/ci.yml) esegue i test a ogni push su `main` e a ogni pull request.
+Per pubblicare una versione: aggiorna `__version__`, aggiungi la sezione della versione in [`CHANGELOG.md`](../CHANGELOG.md) (diventa il testo della release), fai commit e push, poi crea il tag corrispondente (es. `git tag v1.0.1 && git push origin v1.0.1`). La pipeline [`.github/workflows/release.yml`](../.github/workflows/release.yml) controlla che il tag corrisponda a `__version__`, esegue i test, crea gli eseguibili su Windows e macOS, li prova con lo smoke test e pubblica la GitHub Release con i due zip e `SHA256SUMS.txt`. La pipeline [`ci.yml`](../.github/workflows/ci.yml) esegue i test a ogni push su `main` e a ogni pull request.
