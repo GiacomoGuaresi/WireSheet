@@ -36,6 +36,7 @@ Descrivi i cavi in una finestra a card (o importali da Excel/CSV) e WireSheet ge
 - **Import/export Excel e CSV**, con template scaricabile: una riga per filo, intestazioni anche in inglese, valori tolleranti (`rosso`/`RD`, `12,5`).
 - **Anteprima live** del singolo cavo o del foglio in cui finirà.
 - **File di progetto** `.wiresheet` (JSON leggibile) con revisione incrementata a ogni salvataggio.
+- **Controllo aggiornamenti**: all'avvio (disattivabile) o dal menu *Aiuto*; se c'è una versione nuova propone di aprire la pagina della release.
 
 ## Download
 
@@ -90,11 +91,14 @@ PyInstaller non fa cross-compilazione: l'`.exe` si crea su Windows, l'`.app` su 
 ### Pipeline
 
 - **CI** ([`ci.yml`](.github/workflows/ci.yml)): a ogni push su `main` e a ogni pull request esegue i test su Windows e macOS.
-- **Release** ([`release.yml`](.github/workflows/release.yml)): al push di un tag `v*` esegue i test, crea gli eseguibili per Windows e macOS e pubblica una GitHub Release con le note generate dai commit.
+- **Release** ([`release.yml`](.github/workflows/release.yml)): al push di un tag `v*` controlla che corrisponda alla versione dell'app, esegue i test, crea gli eseguibili per Windows e macOS e pubblica una GitHub Release con le note generate dai commit.
+
+La versione si cambia solo in [`wiresheet/__init__.py`](wiresheet/__init__.py) (`__version__`); poi si crea il tag corrispondente:
 
 ```bash
-git tag v1.0.0
-git push origin v1.0.0
+git commit -am "Versione 1.0.1" && git push
+git tag v1.0.1
+git push origin v1.0.1
 ```
 
 Dalla scheda *Actions* si può anche lanciare *Release* a mano per ottenere gli eseguibili come artifact, senza pubblicare una release.

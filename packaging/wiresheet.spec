@@ -1,11 +1,30 @@
 # Build: pyinstaller packaging/wiresheet.spec  ->  dist/WireSheet (.exe su Windows, .app su macOS)
-import os
 import sys
 from pathlib import Path
 
 ROOT = Path(SPECPATH).parent
 RESOURCES = ROOT / "wiresheet" / "resources"
-VERSION = os.environ.get("WIRESHEET_VERSION", "0.0.0").lstrip("v")  # impostata dalla pipeline di release
+sys.path.insert(0, str(ROOT))
+from wiresheet import __version__ as VERSION  # noqa: E402
+
+
+def windows_version_file() -> str:
+    """Proprieta' del file .exe (Dettagli → Versione) da __version__."""
+    from PyInstaller.utils.win32.versioninfo import (FixedFileInfo, StringFileInfo, StringStruct,
+                                                     StringTable, VarFileInfo, VarStruct,
+                                                     VSVersionInfo)
+    numbers = tuple(int(n) for n in VERSION.split(".")) + (0,)
+    strings = {"CompanyName": "Giacomo Guaresi", "FileDescription": "WireSheet",
+               "FileVersion": VERSION, "ProductName": "WireSheet", "ProductVersion": VERSION,
+               "OriginalFilename": "WireSheet.exe", "LegalCopyright": "MIT License"}
+    info = VSVersionInfo(
+        ffi=FixedFileInfo(filevers=numbers, prodvers=numbers),
+        kids=[StringFileInfo([StringTable("040904B0", [StringStruct(k, v) for k, v in strings.items()])]),
+              VarFileInfo([VarStruct("Translation", [0x0409, 1200])])])
+    out = Path(workpath) / "version_info.txt"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(str(info), encoding="utf-8")
+    return str(out)
 
 
 def mac_icon() -> str:
@@ -44,7 +63,8 @@ if sys.platform == "darwin":
     coll = COLLECT(exe, a.binaries, a.datas, name="WireSheet")
     app = BUNDLE(coll, name="WireSheet.app", icon=icon, bundle_identifier="com.giacomoguaresi.wiresheet",
                  info_plist={"NSHighResolutionCapable": True,
-                             "CFBundleShortVersionString": VERSION})
+                             "CFBundleShortVersionString": VERSION,
+                             "CFBundleVersion": VERSION})
 else:
     exe = EXE(pyz, a.scripts, a.binaries, a.datas, [], name="WireSheet",
-              console=False, icon=icon)
+              console=False, icon=icon, version=windows_version_file())

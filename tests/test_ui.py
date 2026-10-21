@@ -437,11 +437,13 @@ def test_revision_shown_after_save(window, tmp_path):
 def test_menus_hold_the_actions(window):
     menus = {m.title().replace("&", ""): [a.text() for a in m.actions() if a.text()]
              for m in (a.menu() for a in window.menuBar().actions())}
-    assert list(menus) == ["File", "Importa/Esporta", "Ordina", "Vista"]
+    assert list(menus) == ["File", "Importa/Esporta", "Ordina", "Vista", "Aiuto"]
     assert "Nuovo cavo" in menus["File"]
     assert menus["Importa/Esporta"][0] == "Esporta PDF…"
     assert "Importa cavi da Excel/CSV…" in menus["Importa/Esporta"]
     assert menus["Ordina"][0] == "Nome (A → Z)"
+    assert menus["Aiuto"] == ["Controlla aggiornamenti…", "Controlla aggiornamenti all'avvio",
+                              "Informazioni su WireSheet"]
     assert not window.findChildren(QToolBar)
 
 

@@ -152,6 +152,8 @@ Esempi dall'elenco cavi: `FANS, MAT SENSOR` (GM-1712/S-7P → XH-2, morsettiera 
 - [x] Repository GitHub pubblico con licenza MIT
 - [x] CI: test su Windows e macOS a ogni push e pull request
 - [x] Release: tag `v*` → eseguibili PyInstaller (`WireSheet.exe`, `WireSheet.app`) allegati alla GitHub Release
+- [x] **v1.0.0**: versione in `wiresheet/__init__.py` (finestra Informazioni, Info.plist, proprietà dell'`.exe`); la pipeline rifiuta i tag che non corrispondono
+- [x] Controllo aggiornamenti dal menu Aiuto e all'avvio (disattivabile): se c'è una release più recente chiede se aprire la pagina di download
 
 ## ⏳ Prossimo passo
 

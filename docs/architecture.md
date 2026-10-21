@@ -10,6 +10,7 @@ WireSheet/
     wiresheet.spec       # build PyInstaller: WireSheet.exe (Windows) / WireSheet.app (macOS)
     launcher.py          # punto di ingresso dell'eseguibile
   wiresheet/
+    __init__.py          # __version__ (unica fonte della versione) e indirizzo del repository
     components.py        # EndKind + codici dei componenti (JST XH, puntalino, forcella, taglio netto)
     colors.py            # sigle colore IEC 60757 → RGB
     model.py             # dataclass Project / Cable / End / Wire + validazione
@@ -26,7 +27,8 @@ WireSheet/
       icon.svg           # icona dell'app (connettore + tre fili con puntalini)
       icon.ico           # stessa icona 16-256 px per Windows / PyInstaller, generata da tools/make_icon.py
     ui/
-      main_window.py     # finestra: menu File/Cavi/Vista, pila di card, pannello anteprima
+      main_window.py     # finestra: menu File/Importa-Esporta/Ordina/Vista/Aiuto, pila di card, pannello anteprima
+      update_check.py    # controllo aggiornamenti: ultima release su GitHub vs __version__
       cable_card.py      # CableCard: intestazione (nome, riepilogo, stato, azioni) + CableEditor
       cable_editor.py    # corpo della card: EndEditor P1/P2, tabella fili, errori
       preview.py         # CablePreview: cavo (draw_cable) o foglio (draw_page), con zoom

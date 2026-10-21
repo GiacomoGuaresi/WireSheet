@@ -43,6 +43,7 @@ python3 -m venv .venv
   - **Cavo** mostra il disegno del singolo cavo.
   - **Foglio** mostra il foglio A3 in cui finirà il cavo, con l'indicazione "Foglio n di m".
 - **Menu Vista:** Anteprima, Espandi tutto, Comprimi tutto. I progetti con più di 5 cavi si aprono con le card compresse.
+- **Menu Aiuto:** Controlla aggiornamenti, Controlla aggiornamenti all'avvio (attivo di default) e Informazioni su WireSheet, con la versione in uso. Se su GitHub c'è una release più recente, il programma chiede se aprire la pagina di download: non scarica né installa nulla da solo. All'avvio il controllo è silenzioso: avvisa solo se c'è una versione nuova.
 - **Esporta PDF** (menu Importa/Esporta o Ctrl+E) crea un PDF A3 verticale con tutti i cavi del progetto, uno sotto l'altro e ingranditi per riempire la larghezza del foglio, con il cartiglio e il numero di pagina in fondo a ogni foglio. Se ci sono modifiche non salvate, prima di esportare chiede di salvare, così il PDF riporta la revisione del file salvato. La revisione sale da sola a ogni salvataggio con modifiche ed è mostrata nel titolo della finestra.
 
 Scorrendo la pila con la rotella, tendine e numeri non cambiano per sbaglio: per modificarli con la rotella bisogna prima cliccarci sopra.
@@ -75,4 +76,6 @@ Il risultato è in `dist/`: `WireSheet.exe` su Windows, `WireSheet.app` su macOS
 
 ## Release
 
-La pipeline [`.github/workflows/release.yml`](../.github/workflows/release.yml) parte al push di un tag `v*` (es. `git tag v1.0.0 && git push origin v1.0.0`): esegue i test, crea gli eseguibili su Windows e macOS e pubblica la GitHub Release con i due zip. La pipeline [`ci.yml`](../.github/workflows/ci.yml) esegue i test a ogni push su `main` e a ogni pull request.
+La versione è scritta solo in `__version__` in [`wiresheet/__init__.py`](../wiresheet/__init__.py): la leggono la finestra Informazioni, il controllo aggiornamenti e la build (Info.plist su macOS, proprietà del file `.exe` su Windows).
+
+Per pubblicare una versione: aggiorna `__version__`, fai commit e push, poi crea il tag corrispondente (es. `git tag v1.0.1 && git push origin v1.0.1`). La pipeline [`.github/workflows/release.yml`](../.github/workflows/release.yml) controlla che il tag corrisponda a `__version__`, esegue i test, crea gli eseguibili su Windows e macOS e pubblica la GitHub Release con i due zip. La pipeline [`ci.yml`](../.github/workflows/ci.yml) esegue i test a ogni push su `main` e a ogni pull request.

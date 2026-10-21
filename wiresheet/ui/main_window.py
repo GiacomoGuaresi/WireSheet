@@ -5,13 +5,14 @@ import re
 from datetime import date
 from pathlib import Path
 
-from PySide6.QtCore import QSize, Qt, QTimer
-from PySide6.QtGui import QAction, QCloseEvent, QKeySequence
+from PySide6.QtCore import QSettings, QSize, Qt, QTimer, QUrl
+from PySide6.QtGui import QAction, QCloseEvent, QDesktopServices, QKeySequence
 from PySide6.QtWidgets import (QApplication, QButtonGroup, QFileDialog, QHBoxLayout, QLabel,
                                QLineEdit, QMainWindow, QMessageBox, QPushButton, QScrollArea,
                                QSizePolicy, QSplitter, QToolButton, QVBoxLayout,
                                QWidget)
 
+from wiresheet import RELEASES_URL, __version__
 from wiresheet.components import KIND_LABELS, EndKind
 from wiresheet.model import Cable, End, Project, Wire
 from wiresheet.pdf_export import export_pdf
@@ -21,6 +22,7 @@ from wiresheet.table_io import example_cables, import_table, write_table
 from wiresheet.ui.cable_card import CableCard
 from wiresheet.ui.preview import CablePreview
 from wiresheet.ui.title_block_card import TitleBlockCard
+from wiresheet.ui.update_check import UpdateChecker
 from wiresheet.ui.icons import icon, toggle_icon
 from wiresheet.ui.style import ACCENT, STYLE
 from wiresheet.ui.widgets import SideTab
@@ -32,6 +34,7 @@ COLLAPSE_ABOVE = 5  # all'apertura, card compresse se i cavi sono piu' di cosi'
 MODE_CABLE, MODE_SHEET = "cable", "sheet"
 CARDS_MIN_WIDTH = 680
 FIRST_CARD = 1  # nella pila il cartiglio occupa il posto 0, i cavi seguono
+AUTO_UPDATE_KEY = "updates/check_on_startup"
 
 
 def natural_key(text: str) -> list:
@@ -77,6 +80,12 @@ class MainWindow(QMainWindow):
         self._dirty = False
         self._saved_revision = self.project.revision  # revisione dell'ultimo salvataggio
         self._preview_mode = MODE_CABLE
+        self._settings = QSettings()
+        self._updates = UpdateChecker(self)
+        self._updates.found.connect(self._on_update_found)
+        self._updates.up_to_date.connect(self._on_up_to_date)
+        self._updates.failed.connect(self._on_update_failed)
+        self._silent_check = False
 
         self._build_actions()
         self._build_menu()
@@ -174,6 +183,14 @@ class MainWindow(QMainWindow):
                                          icon_name="chevron-right")
         self.act_preview = self._action("Anteprima", self.set_preview_visible,
                                         QKeySequence("F2"), checkable=True, icon_name="eye")
+        self.act_check_updates = self._action("Controlla aggiornamenti…",
+                                              lambda: self.check_updates(silent=False))
+        self.act_auto_update = QAction("Controlla aggiornamenti all'avvio", self, checkable=True)
+        self.act_auto_update.setChecked(self.auto_update_enabled())
+        self.act_auto_update.toggled.connect(
+            lambda on: self._settings.setValue(AUTO_UPDATE_KEY, on))
+        self.act_about = self._action("Informazioni su WireSheet", self.about)
+        self.act_about.setMenuRole(QAction.MenuRole.AboutRole)  # su macOS va nel menu dell'app
 
     def _build_menu(self) -> None:
         menus = [
@@ -193,6 +210,9 @@ class MainWindow(QMainWindow):
         view_menu = self.menuBar().addMenu("&Vista")
         for a in (self.act_preview, None, self.act_expand, self.act_collapse):
             view_menu.addSeparator() if a is None else view_menu.addAction(a)
+        help_menu = self.menuBar().addMenu("&Aiuto")
+        for a in (self.act_check_updates, self.act_auto_update, None, self.act_about):
+            help_menu.addSeparator() if a is None else help_menu.addAction(a)
 
     def _build_preview_panel(self) -> QWidget:
         panel = QWidget()
@@ -442,6 +462,42 @@ class MainWindow(QMainWindow):
         self._set_dirty()
         if self._preview_mode == MODE_SHEET:
             self._refresh_preview()
+
+    # --- versione e aggiornamenti ------------------------------------------------
+
+    def about(self) -> None:
+        QMessageBox.about(
+            self, "Informazioni su WireSheet",
+            f"<h3>WireSheet {__version__}</h3>"
+            "<p>Tavole di cablaggio in PDF: estremità 1 → fili → estremità 2.</p>"
+            f'<p><a href="{RELEASES_URL}">{RELEASES_URL}</a></p>'
+            "<p>Licenza MIT © Giacomo Guaresi</p>")
+
+    def auto_update_enabled(self) -> bool:
+        return self._settings.value(AUTO_UPDATE_KEY, True, type=bool)
+
+    def check_updates(self, silent: bool) -> None:
+        """silent=True (all'avvio): avvisa solo se c'e' una versione nuova, niente errori."""
+        self._silent_check = silent
+        self._updates.check()
+
+    def _on_update_found(self, version: str, url: str) -> None:
+        answer = QMessageBox.question(
+            self, "Aggiornamento disponibile",
+            f"È disponibile WireSheet {version} (in uso: {__version__}).\n\n"
+            "Aprire la pagina di download?")
+        if answer == QMessageBox.StandardButton.Yes:
+            QDesktopServices.openUrl(QUrl(url))
+
+    def _on_up_to_date(self) -> None:
+        if not self._silent_check:
+            QMessageBox.information(self, "WireSheet",
+                                    f"Stai usando l'ultima versione ({__version__}).")
+
+    def _on_update_failed(self, message: str) -> None:
+        if not self._silent_check:
+            QMessageBox.warning(self, "WireSheet",
+                                f"Impossibile controllare gli aggiornamenti:\n{message}")
 
     # --- file ----------------------------------------------------------------------
 

@@ -3,9 +3,11 @@
 import sys
 from pathlib import Path
 
+from PySide6.QtCore import QTimer
 from PySide6.QtGui import QIcon
 from PySide6.QtWidgets import QApplication
 
+from wiresheet import __version__
 from wiresheet.ui.main_window import MainWindow
 
 ICON = Path(__file__).resolve().parent / "resources" / "icon.svg"
@@ -18,11 +20,15 @@ def main() -> None:
         ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID("WireSheet")
     app = QApplication(sys.argv)
     app.setApplicationName("WireSheet")
+    app.setOrganizationName("WireSheet")  # chiave delle impostazioni (QSettings)
+    app.setApplicationVersion(__version__)
     app.setWindowIcon(QIcon(str(ICON)))
     window = MainWindow()
     if len(sys.argv) > 1:
         window.open_path(sys.argv[1])
     window.show()
+    if window.auto_update_enabled():
+        QTimer.singleShot(1500, lambda: window.check_updates(silent=True))
     sys.exit(app.exec())
 
 
