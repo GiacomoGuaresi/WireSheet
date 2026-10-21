@@ -1,0 +1,548 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="1775" viewBox="0 0 210.0 355.0">
+<rect width="210.0" height="355.0" fill="#fff"/>
+<text transform="translate(3.000 4.720) scale(0.1)" font-family="Arial" font-size="20.0" text-anchor="start" font-weight="bold">Prese da pannello tipo Weipu (dado posteriore) — GM-13 / GM-17 / GM-21 xx12/S</text>
+<text transform="translate(3.000 8.148) scale(0.1)" font-family="Arial" font-size="18.0" text-anchor="start">Vista laterale 1:1 — schema pin 2:1, vista frontale lato innesto femmina, chiave in alto</text>
+<text transform="translate(3.000 13.720) scale(0.1)" font-family="Arial" font-size="20.0" text-anchor="start" font-weight="bold">GM-1312/S</text>
+<rect x="27.000" y="23.175" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12"/>
+<rect x="27.000" y="26.100" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12"/>
+<rect x="27.000" y="29.025" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12"/>
+<rect x="4.000" y="19.535" width="4.200" height="14.430" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<line x1="4.700" y1="19.535" x2="4.700" y2="33.965" stroke="#000" stroke-width="0.08"/>
+<line x1="5.400" y1="19.535" x2="5.400" y2="33.965" stroke="#000" stroke-width="0.08"/>
+<line x1="6.100" y1="19.535" x2="6.100" y2="33.965" stroke="#000" stroke-width="0.08"/>
+<line x1="6.800" y1="19.535" x2="6.800" y2="33.965" stroke="#000" stroke-width="0.08"/>
+<line x1="7.500" y1="19.535" x2="7.500" y2="33.965" stroke="#000" stroke-width="0.08"/>
+<rect x="8.200" y="18.950" width="4.300" height="15.600" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<rect x="9.000" y="18.350" width="3.000" height="0.600" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<rect x="12.500" y="17.000" width="1.500" height="19.500" fill="#dcdcdc" stroke="#000" stroke-width="0.2"/>
+<rect x="14.000" y="20.250" width="7.150" height="13.000" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<line x1="14.894" y1="20.250" x2="14.894" y2="33.250" stroke="#000" stroke-width="0.08"/>
+<line x1="15.787" y1="20.250" x2="15.787" y2="33.250" stroke="#000" stroke-width="0.08"/>
+<line x1="16.681" y1="20.250" x2="16.681" y2="33.250" stroke="#000" stroke-width="0.08"/>
+<line x1="17.575" y1="20.250" x2="17.575" y2="33.250" stroke="#000" stroke-width="0.08"/>
+<line x1="18.469" y1="20.250" x2="18.469" y2="33.250" stroke="#000" stroke-width="0.08"/>
+<line x1="19.363" y1="20.250" x2="19.363" y2="33.250" stroke="#000" stroke-width="0.08"/>
+<line x1="20.256" y1="20.250" x2="20.256" y2="33.250" stroke="#000" stroke-width="0.08"/>
+<rect x="16.340" y="17.488" width="2.860" height="18.525" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<line x1="16.340" y1="21.875" x2="19.200" y2="21.875" stroke="#000" stroke-width="0.1"/>
+<line x1="16.340" y1="31.625" x2="19.200" y2="31.625" stroke="#000" stroke-width="0.1"/>
+<path d="M21.150,20.900 L23.140,20.900 Q24.140,20.900 24.140,21.900 L24.140,31.600 Q24.140,32.600 23.140,32.600 L21.150,32.600 Z" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<rect x="24.140" y="23.325" width="2.860" height="1.000" fill="#e6e6e6" stroke="#000" stroke-width="0.12"/>
+<rect x="24.140" y="26.250" width="2.860" height="1.000" fill="#e6e6e6" stroke="#000" stroke-width="0.12"/>
+<rect x="24.140" y="29.175" width="2.860" height="1.000" fill="#e6e6e6" stroke="#000" stroke-width="0.12"/>
+<line x1="50.000" y1="33.000" x2="80.000" y2="33.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<line x1="65.000" y1="18.000" x2="65.000" y2="48.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<circle cx="65.000" cy="33.000" r="13.000" fill="#dcdcdc" stroke="#000" stroke-width="0.2"/>
+<circle cx="65.000" cy="33.000" r="12.300" fill="none" stroke="#000" stroke-width="0.08" stroke-dasharray="0.6 0.4"/>
+<circle cx="65.000" cy="33.000" r="11.600" fill="#fff" stroke="#000" stroke-width="0.15"/>
+<rect x="64.100" y="21.350" width="1.800" height="3.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="65.000" cy="33.000" r="10.000" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<rect x="63.950" y="22.950" width="2.100" height="1.450" fill="#fff" stroke="#000" stroke-width="0.12"/>
+<rect x="64.100" y="21.350" width="1.800" height="3.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="60.800" cy="33.000" r="1.900" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(60.800 33.792) scale(0.1)" font-family="Arial" font-size="22.0" text-anchor="middle" font-weight="bold">1</text>
+<circle cx="69.200" cy="33.000" r="1.900" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(69.200 33.792) scale(0.1)" font-family="Arial" font-size="22.0" text-anchor="middle" font-weight="bold">2</text>
+<text transform="translate(65.000 50.064) scale(0.1)" font-family="Arial" font-size="24.0" text-anchor="middle" font-weight="bold">2P</text>
+<line x1="84.000" y1="33.000" x2="114.000" y2="33.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<line x1="99.000" y1="18.000" x2="99.000" y2="48.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<circle cx="99.000" cy="33.000" r="13.000" fill="#dcdcdc" stroke="#000" stroke-width="0.2"/>
+<circle cx="99.000" cy="33.000" r="12.300" fill="none" stroke="#000" stroke-width="0.08" stroke-dasharray="0.6 0.4"/>
+<circle cx="99.000" cy="33.000" r="11.600" fill="#fff" stroke="#000" stroke-width="0.15"/>
+<rect x="98.100" y="21.350" width="1.800" height="3.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="99.000" cy="33.000" r="10.000" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<rect x="97.950" y="22.950" width="2.100" height="1.450" fill="#fff" stroke="#000" stroke-width="0.12"/>
+<rect x="98.100" y="21.350" width="1.800" height="3.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="95.200" cy="30.500" r="1.900" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(95.200 31.292) scale(0.1)" font-family="Arial" font-size="22.0" text-anchor="middle" font-weight="bold">1</text>
+<circle cx="102.800" cy="30.500" r="1.900" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(102.800 31.292) scale(0.1)" font-family="Arial" font-size="22.0" text-anchor="middle" font-weight="bold">2</text>
+<circle cx="99.000" cy="36.900" r="1.900" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(99.000 37.692) scale(0.1)" font-family="Arial" font-size="22.0" text-anchor="middle" font-weight="bold">3</text>
+<text transform="translate(99.000 50.064) scale(0.1)" font-family="Arial" font-size="24.0" text-anchor="middle" font-weight="bold">3P</text>
+<line x1="118.000" y1="33.000" x2="148.000" y2="33.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<line x1="133.000" y1="18.000" x2="133.000" y2="48.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<circle cx="133.000" cy="33.000" r="13.000" fill="#dcdcdc" stroke="#000" stroke-width="0.2"/>
+<circle cx="133.000" cy="33.000" r="12.300" fill="none" stroke="#000" stroke-width="0.08" stroke-dasharray="0.6 0.4"/>
+<circle cx="133.000" cy="33.000" r="11.600" fill="#fff" stroke="#000" stroke-width="0.15"/>
+<rect x="132.100" y="21.350" width="1.800" height="3.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="133.000" cy="33.000" r="10.000" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<rect x="131.950" y="22.950" width="2.100" height="1.450" fill="#fff" stroke="#000" stroke-width="0.12"/>
+<rect x="132.100" y="21.350" width="1.800" height="3.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="129.900" cy="29.600" r="1.750" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(129.900 30.392) scale(0.1)" font-family="Arial" font-size="22.0" text-anchor="middle" font-weight="bold">1</text>
+<circle cx="136.100" cy="29.600" r="1.750" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(136.100 30.392) scale(0.1)" font-family="Arial" font-size="22.0" text-anchor="middle" font-weight="bold">2</text>
+<circle cx="136.100" cy="36.400" r="1.750" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(136.100 37.192) scale(0.1)" font-family="Arial" font-size="22.0" text-anchor="middle" font-weight="bold">3</text>
+<circle cx="129.900" cy="36.400" r="1.750" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(129.900 37.192) scale(0.1)" font-family="Arial" font-size="22.0" text-anchor="middle" font-weight="bold">4</text>
+<text transform="translate(133.000 50.064) scale(0.1)" font-family="Arial" font-size="24.0" text-anchor="middle" font-weight="bold">4P</text>
+<line x1="152.000" y1="33.000" x2="182.000" y2="33.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<line x1="167.000" y1="18.000" x2="167.000" y2="48.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<circle cx="167.000" cy="33.000" r="13.000" fill="#dcdcdc" stroke="#000" stroke-width="0.2"/>
+<circle cx="167.000" cy="33.000" r="12.300" fill="none" stroke="#000" stroke-width="0.08" stroke-dasharray="0.6 0.4"/>
+<circle cx="167.000" cy="33.000" r="11.600" fill="#fff" stroke="#000" stroke-width="0.15"/>
+<rect x="166.100" y="21.350" width="1.800" height="3.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="167.000" cy="33.000" r="10.000" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<rect x="165.950" y="22.950" width="2.100" height="1.450" fill="#fff" stroke="#000" stroke-width="0.12"/>
+<rect x="166.100" y="21.350" width="1.800" height="3.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="169.900" cy="28.400" r="1.750" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(169.900 29.192) scale(0.1)" font-family="Arial" font-size="22.0" text-anchor="middle" font-weight="bold">1</text>
+<circle cx="164.100" cy="28.400" r="1.750" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(164.100 29.192) scale(0.1)" font-family="Arial" font-size="22.0" text-anchor="middle" font-weight="bold">5</text>
+<circle cx="171.800" cy="33.900" r="1.750" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(171.800 34.692) scale(0.1)" font-family="Arial" font-size="22.0" text-anchor="middle" font-weight="bold">2</text>
+<circle cx="162.200" cy="33.900" r="1.750" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(162.200 34.692) scale(0.1)" font-family="Arial" font-size="22.0" text-anchor="middle" font-weight="bold">4</text>
+<circle cx="167.000" cy="37.600" r="1.750" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(167.000 38.392) scale(0.1)" font-family="Arial" font-size="22.0" text-anchor="middle" font-weight="bold">3</text>
+<text transform="translate(167.000 50.064) scale(0.1)" font-family="Arial" font-size="24.0" text-anchor="middle" font-weight="bold">5P</text>
+<line x1="50.000" y1="70.000" x2="80.000" y2="70.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<line x1="65.000" y1="55.000" x2="65.000" y2="85.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<circle cx="65.000" cy="70.000" r="13.000" fill="#dcdcdc" stroke="#000" stroke-width="0.2"/>
+<circle cx="65.000" cy="70.000" r="12.300" fill="none" stroke="#000" stroke-width="0.08" stroke-dasharray="0.6 0.4"/>
+<circle cx="65.000" cy="70.000" r="11.600" fill="#fff" stroke="#000" stroke-width="0.15"/>
+<rect x="64.100" y="58.350" width="1.800" height="3.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="65.000" cy="70.000" r="10.000" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<rect x="63.950" y="59.950" width="2.100" height="1.450" fill="#fff" stroke="#000" stroke-width="0.12"/>
+<rect x="64.100" y="58.350" width="1.800" height="3.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="65.000" cy="64.200" r="1.750" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(65.000 64.992) scale(0.1)" font-family="Arial" font-size="22.0" text-anchor="middle" font-weight="bold">1</text>
+<circle cx="69.700" cy="67.200" r="1.750" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(69.700 67.992) scale(0.1)" font-family="Arial" font-size="22.0" text-anchor="middle" font-weight="bold">2</text>
+<circle cx="69.900" cy="72.900" r="1.750" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(69.900 73.692) scale(0.1)" font-family="Arial" font-size="22.0" text-anchor="middle" font-weight="bold">3</text>
+<circle cx="65.000" cy="75.600" r="1.750" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(65.000 76.392) scale(0.1)" font-family="Arial" font-size="22.0" text-anchor="middle" font-weight="bold">4</text>
+<circle cx="60.100" cy="72.900" r="1.750" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(60.100 73.692) scale(0.1)" font-family="Arial" font-size="22.0" text-anchor="middle" font-weight="bold">5</text>
+<circle cx="60.300" cy="67.200" r="1.750" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(60.300 67.992) scale(0.1)" font-family="Arial" font-size="22.0" text-anchor="middle" font-weight="bold">6</text>
+<text transform="translate(65.000 87.064) scale(0.1)" font-family="Arial" font-size="24.0" text-anchor="middle" font-weight="bold">6P</text>
+<line x1="84.000" y1="70.000" x2="114.000" y2="70.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<line x1="99.000" y1="55.000" x2="99.000" y2="85.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<circle cx="99.000" cy="70.000" r="13.000" fill="#dcdcdc" stroke="#000" stroke-width="0.2"/>
+<circle cx="99.000" cy="70.000" r="12.300" fill="none" stroke="#000" stroke-width="0.08" stroke-dasharray="0.6 0.4"/>
+<circle cx="99.000" cy="70.000" r="11.600" fill="#fff" stroke="#000" stroke-width="0.15"/>
+<rect x="98.100" y="58.350" width="1.800" height="3.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="99.000" cy="70.000" r="10.000" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<rect x="97.950" y="59.950" width="2.100" height="1.450" fill="#fff" stroke="#000" stroke-width="0.12"/>
+<rect x="98.100" y="58.350" width="1.800" height="3.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="101.900" cy="65.000" r="1.750" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(101.900 65.792) scale(0.1)" font-family="Arial" font-size="22.0" text-anchor="middle" font-weight="bold">1</text>
+<circle cx="96.100" cy="65.000" r="1.750" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(96.100 65.792) scale(0.1)" font-family="Arial" font-size="22.0" text-anchor="middle" font-weight="bold">6</text>
+<circle cx="104.800" cy="70.000" r="1.750" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(104.800 70.792) scale(0.1)" font-family="Arial" font-size="22.0" text-anchor="middle" font-weight="bold">2</text>
+<circle cx="99.000" cy="70.000" r="1.750" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(99.000 70.792) scale(0.1)" font-family="Arial" font-size="22.0" text-anchor="middle" font-weight="bold">7</text>
+<circle cx="93.200" cy="70.000" r="1.750" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(93.200 70.792) scale(0.1)" font-family="Arial" font-size="22.0" text-anchor="middle" font-weight="bold">5</text>
+<circle cx="101.900" cy="75.000" r="1.750" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(101.900 75.792) scale(0.1)" font-family="Arial" font-size="22.0" text-anchor="middle" font-weight="bold">3</text>
+<circle cx="96.100" cy="75.000" r="1.750" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(96.100 75.792) scale(0.1)" font-family="Arial" font-size="22.0" text-anchor="middle" font-weight="bold">4</text>
+<text transform="translate(99.000 87.064) scale(0.1)" font-family="Arial" font-size="24.0" text-anchor="middle" font-weight="bold">7P</text>
+<line x1="118.000" y1="70.000" x2="148.000" y2="70.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<line x1="133.000" y1="55.000" x2="133.000" y2="85.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<circle cx="133.000" cy="70.000" r="13.000" fill="#dcdcdc" stroke="#000" stroke-width="0.2"/>
+<circle cx="133.000" cy="70.000" r="12.300" fill="none" stroke="#000" stroke-width="0.08" stroke-dasharray="0.6 0.4"/>
+<circle cx="133.000" cy="70.000" r="11.600" fill="#fff" stroke="#000" stroke-width="0.15"/>
+<rect x="132.100" y="58.350" width="1.800" height="3.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="133.000" cy="70.000" r="10.000" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<rect x="131.950" y="59.950" width="2.100" height="1.450" fill="#fff" stroke="#000" stroke-width="0.12"/>
+<rect x="132.100" y="58.350" width="1.800" height="3.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="135.200" cy="64.800" r="1.750" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(135.200 65.592) scale(0.1)" font-family="Arial" font-size="22.0" text-anchor="middle" font-weight="bold">1</text>
+<circle cx="130.800" cy="64.800" r="1.750" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(130.800 65.592) scale(0.1)" font-family="Arial" font-size="22.0" text-anchor="middle" font-weight="bold">8</text>
+<circle cx="138.200" cy="68.200" r="1.750" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(138.200 68.992) scale(0.1)" font-family="Arial" font-size="22.0" text-anchor="middle" font-weight="bold">2</text>
+<circle cx="127.800" cy="68.200" r="1.750" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(127.800 68.992) scale(0.1)" font-family="Arial" font-size="22.0" text-anchor="middle" font-weight="bold">7</text>
+<circle cx="133.800" cy="70.000" r="1.750" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(133.800 70.792) scale(0.1)" font-family="Arial" font-size="22.0" text-anchor="middle" font-weight="bold">9</text>
+<circle cx="138.200" cy="72.200" r="1.750" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(138.200 72.992) scale(0.1)" font-family="Arial" font-size="22.0" text-anchor="middle" font-weight="bold">3</text>
+<circle cx="127.800" cy="72.200" r="1.750" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(127.800 72.992) scale(0.1)" font-family="Arial" font-size="22.0" text-anchor="middle" font-weight="bold">6</text>
+<circle cx="135.200" cy="75.500" r="1.750" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(135.200 76.292) scale(0.1)" font-family="Arial" font-size="22.0" text-anchor="middle" font-weight="bold">4</text>
+<circle cx="130.800" cy="75.500" r="1.750" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(130.800 76.292) scale(0.1)" font-family="Arial" font-size="22.0" text-anchor="middle" font-weight="bold">5</text>
+<text transform="translate(133.000 87.064) scale(0.1)" font-family="Arial" font-size="24.0" text-anchor="middle" font-weight="bold">9P</text>
+<line x1="3.000" y1="91.000" x2="207.000" y2="91.000" stroke="#000" stroke-width="0.08"/>
+<text transform="translate(3.000 93.720) scale(0.1)" font-family="Arial" font-size="20.0" text-anchor="start" font-weight="bold">GM-1712/S</text>
+<rect x="31.000" y="105.100" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12"/>
+<rect x="31.000" y="108.850" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12"/>
+<rect x="31.000" y="112.600" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12"/>
+<rect x="4.000" y="100.250" width="5.124" height="18.500" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<line x1="4.854" y1="100.250" x2="4.854" y2="118.750" stroke="#000" stroke-width="0.08"/>
+<line x1="5.708" y1="100.250" x2="5.708" y2="118.750" stroke="#000" stroke-width="0.08"/>
+<line x1="6.562" y1="100.250" x2="6.562" y2="118.750" stroke="#000" stroke-width="0.08"/>
+<line x1="7.416" y1="100.250" x2="7.416" y2="118.750" stroke="#000" stroke-width="0.08"/>
+<line x1="8.270" y1="100.250" x2="8.270" y2="118.750" stroke="#000" stroke-width="0.08"/>
+<rect x="9.124" y="99.500" width="5.246" height="20.000" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<rect x="10.100" y="98.900" width="3.660" height="0.600" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<rect x="14.370" y="97.000" width="1.830" height="25.000" fill="#dcdcdc" stroke="#000" stroke-width="0.2"/>
+<rect x="16.200" y="101.000" width="8.140" height="17.000" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<line x1="17.218" y1="101.000" x2="17.218" y2="118.000" stroke="#000" stroke-width="0.08"/>
+<line x1="18.235" y1="101.000" x2="18.235" y2="118.000" stroke="#000" stroke-width="0.08"/>
+<line x1="19.252" y1="101.000" x2="19.252" y2="118.000" stroke="#000" stroke-width="0.08"/>
+<line x1="20.270" y1="101.000" x2="20.270" y2="118.000" stroke="#000" stroke-width="0.08"/>
+<line x1="21.288" y1="101.000" x2="21.288" y2="118.000" stroke="#000" stroke-width="0.08"/>
+<line x1="22.305" y1="101.000" x2="22.305" y2="118.000" stroke="#000" stroke-width="0.08"/>
+<line x1="23.322" y1="101.000" x2="23.322" y2="118.000" stroke="#000" stroke-width="0.08"/>
+<rect x="18.864" y="97.625" width="3.256" height="23.750" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<line x1="18.864" y1="103.250" x2="22.120" y2="103.250" stroke="#000" stroke-width="0.1"/>
+<line x1="18.864" y1="115.750" x2="22.120" y2="115.750" stroke="#000" stroke-width="0.1"/>
+<path d="M24.340,102.000 L26.744,102.000 Q27.744,102.000 27.744,103.000 L27.744,116.000 Q27.744,117.000 26.744,117.000 L24.340,117.000 Z" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<rect x="27.744" y="105.250" width="3.256" height="1.000" fill="#e6e6e6" stroke="#000" stroke-width="0.12"/>
+<rect x="27.744" y="109.000" width="3.256" height="1.000" fill="#e6e6e6" stroke="#000" stroke-width="0.12"/>
+<rect x="27.744" y="112.750" width="3.256" height="1.000" fill="#e6e6e6" stroke="#000" stroke-width="0.12"/>
+<line x1="50.000" y1="117.000" x2="88.000" y2="117.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<line x1="69.000" y1="98.000" x2="69.000" y2="136.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<circle cx="69.000" cy="117.000" r="17.000" fill="#dcdcdc" stroke="#000" stroke-width="0.2"/>
+<circle cx="69.000" cy="117.000" r="16.300" fill="none" stroke="#000" stroke-width="0.08" stroke-dasharray="0.6 0.4"/>
+<circle cx="69.000" cy="117.000" r="15.600" fill="#fff" stroke="#000" stroke-width="0.15"/>
+<rect x="68.100" y="101.350" width="1.800" height="4.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="69.000" cy="117.000" r="13.000" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<rect x="67.950" y="103.950" width="2.100" height="1.450" fill="#fff" stroke="#000" stroke-width="0.12"/>
+<rect x="68.100" y="101.350" width="1.800" height="4.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="63.540" cy="117.000" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(63.540 117.936) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">1</text>
+<circle cx="74.460" cy="117.000" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(74.460 117.936) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">2</text>
+<text transform="translate(69.000 138.064) scale(0.1)" font-family="Arial" font-size="24.0" text-anchor="middle" font-weight="bold">2P</text>
+<line x1="92.000" y1="117.000" x2="130.000" y2="117.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<line x1="111.000" y1="98.000" x2="111.000" y2="136.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<circle cx="111.000" cy="117.000" r="17.000" fill="#dcdcdc" stroke="#000" stroke-width="0.2"/>
+<circle cx="111.000" cy="117.000" r="16.300" fill="none" stroke="#000" stroke-width="0.08" stroke-dasharray="0.6 0.4"/>
+<circle cx="111.000" cy="117.000" r="15.600" fill="#fff" stroke="#000" stroke-width="0.15"/>
+<rect x="110.100" y="101.350" width="1.800" height="4.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="111.000" cy="117.000" r="13.000" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<rect x="109.950" y="103.950" width="2.100" height="1.450" fill="#fff" stroke="#000" stroke-width="0.12"/>
+<rect x="110.100" y="101.350" width="1.800" height="4.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="106.060" cy="113.750" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(106.060 114.686) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">1</text>
+<circle cx="115.940" cy="113.750" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(115.940 114.686) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">2</text>
+<circle cx="111.000" cy="122.070" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(111.000 123.006) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">3</text>
+<text transform="translate(111.000 138.064) scale(0.1)" font-family="Arial" font-size="24.0" text-anchor="middle" font-weight="bold">3P</text>
+<line x1="134.000" y1="117.000" x2="172.000" y2="117.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<line x1="153.000" y1="98.000" x2="153.000" y2="136.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<circle cx="153.000" cy="117.000" r="17.000" fill="#dcdcdc" stroke="#000" stroke-width="0.2"/>
+<circle cx="153.000" cy="117.000" r="16.300" fill="none" stroke="#000" stroke-width="0.08" stroke-dasharray="0.6 0.4"/>
+<circle cx="153.000" cy="117.000" r="15.600" fill="#fff" stroke="#000" stroke-width="0.15"/>
+<rect x="152.100" y="101.350" width="1.800" height="4.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="153.000" cy="117.000" r="13.000" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<rect x="151.950" y="103.950" width="2.100" height="1.450" fill="#fff" stroke="#000" stroke-width="0.12"/>
+<rect x="152.100" y="101.350" width="1.800" height="4.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="148.970" cy="112.580" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(148.970 113.516) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">1</text>
+<circle cx="157.030" cy="112.580" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(157.030 113.516) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">2</text>
+<circle cx="157.030" cy="121.420" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(157.030 122.356) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">3</text>
+<circle cx="148.970" cy="121.420" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(148.970 122.356) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">4</text>
+<text transform="translate(153.000 138.064) scale(0.1)" font-family="Arial" font-size="24.0" text-anchor="middle" font-weight="bold">4P</text>
+<line x1="50.000" y1="162.000" x2="88.000" y2="162.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<line x1="69.000" y1="143.000" x2="69.000" y2="181.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<circle cx="69.000" cy="162.000" r="17.000" fill="#dcdcdc" stroke="#000" stroke-width="0.2"/>
+<circle cx="69.000" cy="162.000" r="16.300" fill="none" stroke="#000" stroke-width="0.08" stroke-dasharray="0.6 0.4"/>
+<circle cx="69.000" cy="162.000" r="15.600" fill="#fff" stroke="#000" stroke-width="0.15"/>
+<rect x="68.100" y="146.350" width="1.800" height="4.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="69.000" cy="162.000" r="13.000" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<rect x="67.950" y="148.950" width="2.100" height="1.450" fill="#fff" stroke="#000" stroke-width="0.12"/>
+<rect x="68.100" y="146.350" width="1.800" height="4.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="72.770" cy="156.020" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(72.770 156.956) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">1</text>
+<circle cx="65.230" cy="156.020" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(65.230 156.956) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">5</text>
+<circle cx="75.240" cy="163.170" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(75.240 164.106) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">2</text>
+<circle cx="62.760" cy="163.170" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(62.760 164.106) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">4</text>
+<circle cx="69.000" cy="167.980" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(69.000 168.916) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">3</text>
+<text transform="translate(69.000 183.064) scale(0.1)" font-family="Arial" font-size="24.0" text-anchor="middle" font-weight="bold">5P</text>
+<line x1="92.000" y1="162.000" x2="130.000" y2="162.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<line x1="111.000" y1="143.000" x2="111.000" y2="181.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<circle cx="111.000" cy="162.000" r="17.000" fill="#dcdcdc" stroke="#000" stroke-width="0.2"/>
+<circle cx="111.000" cy="162.000" r="16.300" fill="none" stroke="#000" stroke-width="0.08" stroke-dasharray="0.6 0.4"/>
+<circle cx="111.000" cy="162.000" r="15.600" fill="#fff" stroke="#000" stroke-width="0.15"/>
+<rect x="110.100" y="146.350" width="1.800" height="4.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="111.000" cy="162.000" r="13.000" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<rect x="109.950" y="148.950" width="2.100" height="1.450" fill="#fff" stroke="#000" stroke-width="0.12"/>
+<rect x="110.100" y="146.350" width="1.800" height="4.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="114.770" cy="155.500" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(114.770 156.436) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">1</text>
+<circle cx="107.230" cy="155.500" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(107.230 156.436) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">6</text>
+<circle cx="118.540" cy="162.000" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(118.540 162.936) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">2</text>
+<circle cx="111.000" cy="162.000" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(111.000 162.936) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">7</text>
+<circle cx="103.460" cy="162.000" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(103.460 162.936) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">5</text>
+<circle cx="114.770" cy="168.500" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(114.770 169.436) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">3</text>
+<circle cx="107.230" cy="168.500" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(107.230 169.436) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">4</text>
+<text transform="translate(111.000 183.064) scale(0.1)" font-family="Arial" font-size="24.0" text-anchor="middle" font-weight="bold">7P</text>
+<line x1="134.000" y1="162.000" x2="172.000" y2="162.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<line x1="153.000" y1="143.000" x2="153.000" y2="181.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<circle cx="153.000" cy="162.000" r="17.000" fill="#dcdcdc" stroke="#000" stroke-width="0.2"/>
+<circle cx="153.000" cy="162.000" r="16.300" fill="none" stroke="#000" stroke-width="0.08" stroke-dasharray="0.6 0.4"/>
+<circle cx="153.000" cy="162.000" r="15.600" fill="#fff" stroke="#000" stroke-width="0.15"/>
+<rect x="152.100" y="146.350" width="1.800" height="4.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="153.000" cy="162.000" r="13.000" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<rect x="151.950" y="148.950" width="2.100" height="1.450" fill="#fff" stroke="#000" stroke-width="0.12"/>
+<rect x="152.100" y="146.350" width="1.800" height="4.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="155.860" cy="155.240" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(155.860 156.176) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">1</text>
+<circle cx="150.140" cy="155.240" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(150.140 156.176) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">8</text>
+<circle cx="159.760" cy="159.660" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(159.760 160.596) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">2</text>
+<circle cx="146.240" cy="159.660" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(146.240 160.596) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">7</text>
+<circle cx="154.040" cy="162.000" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(154.040 162.936) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">9</text>
+<circle cx="159.760" cy="164.860" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(159.760 165.796) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">3</text>
+<circle cx="146.240" cy="164.860" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(146.240 165.796) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">6</text>
+<circle cx="155.860" cy="169.150" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(155.860 170.086) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">4</text>
+<circle cx="150.140" cy="169.150" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(150.140 170.086) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">5</text>
+<text transform="translate(153.000 183.064) scale(0.1)" font-family="Arial" font-size="24.0" text-anchor="middle" font-weight="bold">9P</text>
+<line x1="3.000" y1="187.000" x2="207.000" y2="187.000" stroke="#000" stroke-width="0.08"/>
+<text transform="translate(3.000 189.720) scale(0.1)" font-family="Arial" font-size="20.0" text-anchor="start" font-weight="bold">GM-2112/S</text>
+<rect x="31.000" y="202.500" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12"/>
+<rect x="31.000" y="206.850" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12"/>
+<rect x="31.000" y="211.200" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12"/>
+<rect x="4.000" y="196.770" width="5.586" height="21.460" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<line x1="4.931" y1="196.770" x2="4.931" y2="218.230" stroke="#000" stroke-width="0.08"/>
+<line x1="5.862" y1="196.770" x2="5.862" y2="218.230" stroke="#000" stroke-width="0.08"/>
+<line x1="6.793" y1="196.770" x2="6.793" y2="218.230" stroke="#000" stroke-width="0.08"/>
+<line x1="7.724" y1="196.770" x2="7.724" y2="218.230" stroke="#000" stroke-width="0.08"/>
+<line x1="8.655" y1="196.770" x2="8.655" y2="218.230" stroke="#000" stroke-width="0.08"/>
+<rect x="9.586" y="195.900" width="5.719" height="23.200" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<rect x="10.650" y="195.300" width="3.990" height="0.600" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<rect x="15.305" y="193.000" width="1.995" height="29.000" fill="#dcdcdc" stroke="#000" stroke-width="0.2"/>
+<rect x="17.300" y="197.000" width="7.535" height="21.000" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<line x1="18.242" y1="197.000" x2="18.242" y2="218.000" stroke="#000" stroke-width="0.08"/>
+<line x1="19.184" y1="197.000" x2="19.184" y2="218.000" stroke="#000" stroke-width="0.08"/>
+<line x1="20.126" y1="197.000" x2="20.126" y2="218.000" stroke="#000" stroke-width="0.08"/>
+<line x1="21.068" y1="197.000" x2="21.068" y2="218.000" stroke="#000" stroke-width="0.08"/>
+<line x1="22.009" y1="197.000" x2="22.009" y2="218.000" stroke="#000" stroke-width="0.08"/>
+<line x1="22.951" y1="197.000" x2="22.951" y2="218.000" stroke="#000" stroke-width="0.08"/>
+<line x1="23.893" y1="197.000" x2="23.893" y2="218.000" stroke="#000" stroke-width="0.08"/>
+<rect x="19.766" y="193.725" width="3.014" height="27.550" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<line x1="19.766" y1="200.250" x2="22.780" y2="200.250" stroke="#000" stroke-width="0.1"/>
+<line x1="19.766" y1="214.750" x2="22.780" y2="214.750" stroke="#000" stroke-width="0.1"/>
+<path d="M24.835,198.800 L26.986,198.800 Q27.986,198.800 27.986,199.800 L27.986,215.200 Q27.986,216.200 26.986,216.200 L24.835,216.200 Z" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<rect x="27.986" y="202.650" width="3.014" height="1.000" fill="#e6e6e6" stroke="#000" stroke-width="0.12"/>
+<rect x="27.986" y="207.000" width="3.014" height="1.000" fill="#e6e6e6" stroke="#000" stroke-width="0.12"/>
+<rect x="27.986" y="211.350" width="3.014" height="1.000" fill="#e6e6e6" stroke="#000" stroke-width="0.12"/>
+<line x1="50.000" y1="217.000" x2="96.000" y2="217.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<line x1="73.000" y1="194.000" x2="73.000" y2="240.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<circle cx="73.000" cy="217.000" r="21.000" fill="#dcdcdc" stroke="#000" stroke-width="0.2"/>
+<circle cx="73.000" cy="217.000" r="20.300" fill="none" stroke="#000" stroke-width="0.08" stroke-dasharray="0.6 0.4"/>
+<circle cx="73.000" cy="217.000" r="19.600" fill="#fff" stroke="#000" stroke-width="0.15"/>
+<rect x="72.100" y="197.350" width="1.800" height="5.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="73.000" cy="217.000" r="16.000" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<rect x="71.950" y="200.950" width="2.100" height="1.450" fill="#fff" stroke="#000" stroke-width="0.12"/>
+<rect x="72.100" y="197.350" width="1.800" height="5.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="73.000" cy="210.440" r="3.300" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(73.000 211.376) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">1</text>
+<circle cx="73.000" cy="223.560" r="3.300" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(73.000 224.496) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">2</text>
+<text transform="translate(73.000 242.064) scale(0.1)" font-family="Arial" font-size="24.0" text-anchor="middle" font-weight="bold">2P</text>
+<line x1="100.000" y1="217.000" x2="146.000" y2="217.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<line x1="123.000" y1="194.000" x2="123.000" y2="240.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<circle cx="123.000" cy="217.000" r="21.000" fill="#dcdcdc" stroke="#000" stroke-width="0.2"/>
+<circle cx="123.000" cy="217.000" r="20.300" fill="none" stroke="#000" stroke-width="0.08" stroke-dasharray="0.6 0.4"/>
+<circle cx="123.000" cy="217.000" r="19.600" fill="#fff" stroke="#000" stroke-width="0.15"/>
+<rect x="122.100" y="197.350" width="1.800" height="5.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="123.000" cy="217.000" r="16.000" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<rect x="121.950" y="200.950" width="2.100" height="1.450" fill="#fff" stroke="#000" stroke-width="0.12"/>
+<rect x="122.100" y="197.350" width="1.800" height="5.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="117.400" cy="213.800" r="3.300" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(117.400 214.736) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">1</text>
+<circle cx="128.600" cy="213.800" r="3.300" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(128.600 214.736) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">2</text>
+<circle cx="123.000" cy="223.560" r="3.300" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(123.000 224.496) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">3</text>
+<text transform="translate(123.000 242.064) scale(0.1)" font-family="Arial" font-size="24.0" text-anchor="middle" font-weight="bold">3P</text>
+<line x1="150.000" y1="217.000" x2="196.000" y2="217.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<line x1="173.000" y1="194.000" x2="173.000" y2="240.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<circle cx="173.000" cy="217.000" r="21.000" fill="#dcdcdc" stroke="#000" stroke-width="0.2"/>
+<circle cx="173.000" cy="217.000" r="20.300" fill="none" stroke="#000" stroke-width="0.08" stroke-dasharray="0.6 0.4"/>
+<circle cx="173.000" cy="217.000" r="19.600" fill="#fff" stroke="#000" stroke-width="0.15"/>
+<rect x="172.100" y="197.350" width="1.800" height="5.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="173.000" cy="217.000" r="16.000" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<rect x="171.950" y="200.950" width="2.100" height="1.450" fill="#fff" stroke="#000" stroke-width="0.12"/>
+<rect x="172.100" y="197.350" width="1.800" height="5.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="173.000" cy="210.600" r="3.300" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(173.000 211.536) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">1</text>
+<circle cx="166.600" cy="217.000" r="3.300" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(166.600 217.936) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">2</text>
+<circle cx="179.400" cy="217.000" r="3.300" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(179.400 217.936) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">3</text>
+<circle cx="173.000" cy="223.400" r="3.300" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(173.000 224.336) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">4</text>
+<text transform="translate(173.000 242.064) scale(0.1)" font-family="Arial" font-size="24.0" text-anchor="middle" font-weight="bold">4P</text>
+<line x1="50.000" y1="270.000" x2="96.000" y2="270.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<line x1="73.000" y1="247.000" x2="73.000" y2="293.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<circle cx="73.000" cy="270.000" r="21.000" fill="#dcdcdc" stroke="#000" stroke-width="0.2"/>
+<circle cx="73.000" cy="270.000" r="20.300" fill="none" stroke="#000" stroke-width="0.08" stroke-dasharray="0.6 0.4"/>
+<circle cx="73.000" cy="270.000" r="19.600" fill="#fff" stroke="#000" stroke-width="0.15"/>
+<rect x="72.100" y="250.350" width="1.800" height="5.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="73.000" cy="270.000" r="16.000" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<rect x="71.950" y="253.950" width="2.100" height="1.450" fill="#fff" stroke="#000" stroke-width="0.12"/>
+<rect x="72.100" y="250.350" width="1.800" height="5.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="69.000" cy="264.880" r="3.300" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(69.000 265.816) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">1</text>
+<circle cx="77.000" cy="264.880" r="3.300" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(77.000 265.816) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">2</text>
+<circle cx="66.600" cy="272.080" r="3.300" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(66.600 273.016) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">3</text>
+<circle cx="79.400" cy="272.080" r="3.300" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(79.400 273.016) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">4</text>
+<circle cx="73.000" cy="276.720" r="3.300" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(73.000 277.656) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">5</text>
+<text transform="translate(73.000 295.064) scale(0.1)" font-family="Arial" font-size="24.0" text-anchor="middle" font-weight="bold">5P-A</text>
+<line x1="100.000" y1="270.000" x2="146.000" y2="270.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<line x1="123.000" y1="247.000" x2="123.000" y2="293.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<circle cx="123.000" cy="270.000" r="21.000" fill="#dcdcdc" stroke="#000" stroke-width="0.2"/>
+<circle cx="123.000" cy="270.000" r="20.300" fill="none" stroke="#000" stroke-width="0.08" stroke-dasharray="0.6 0.4"/>
+<circle cx="123.000" cy="270.000" r="19.600" fill="#fff" stroke="#000" stroke-width="0.15"/>
+<rect x="122.100" y="250.350" width="1.800" height="5.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="123.000" cy="270.000" r="16.000" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<rect x="121.950" y="253.950" width="2.100" height="1.450" fill="#fff" stroke="#000" stroke-width="0.12"/>
+<rect x="122.100" y="250.350" width="1.800" height="5.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="117.560" cy="265.200" r="3.300" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(117.560 266.136) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">1</text>
+<circle cx="128.440" cy="265.200" r="3.300" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(128.440 266.136) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">2</text>
+<circle cx="116.280" cy="274.960" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(116.280 275.896) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">3</text>
+<circle cx="129.720" cy="274.960" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(129.720 275.896) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">4</text>
+<circle cx="123.000" cy="278.480" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(123.000 279.416) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">5</text>
+<text transform="translate(123.000 295.064) scale(0.1)" font-family="Arial" font-size="24.0" text-anchor="middle" font-weight="bold">5P-B</text>
+<line x1="150.000" y1="270.000" x2="196.000" y2="270.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<line x1="173.000" y1="247.000" x2="173.000" y2="293.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<circle cx="173.000" cy="270.000" r="21.000" fill="#dcdcdc" stroke="#000" stroke-width="0.2"/>
+<circle cx="173.000" cy="270.000" r="20.300" fill="none" stroke="#000" stroke-width="0.08" stroke-dasharray="0.6 0.4"/>
+<circle cx="173.000" cy="270.000" r="19.600" fill="#fff" stroke="#000" stroke-width="0.15"/>
+<rect x="172.100" y="250.350" width="1.800" height="5.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="173.000" cy="270.000" r="16.000" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<rect x="171.950" y="253.950" width="2.100" height="1.450" fill="#fff" stroke="#000" stroke-width="0.12"/>
+<rect x="172.100" y="250.350" width="1.800" height="5.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="167.720" cy="262.480" r="2.300" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(167.720 263.416) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">1</text>
+<circle cx="178.280" cy="262.480" r="2.300" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(178.280 263.416) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">2</text>
+<circle cx="164.360" cy="272.080" r="2.300" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(164.360 273.016) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">3</text>
+<circle cx="181.640" cy="272.080" r="2.300" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(181.640 273.016) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">4</text>
+<circle cx="173.000" cy="278.480" r="2.300" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(173.000 279.416) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">5</text>
+<text transform="translate(173.000 295.064) scale(0.1)" font-family="Arial" font-size="24.0" text-anchor="middle" font-weight="bold">5P-C</text>
+<line x1="50.000" y1="323.000" x2="96.000" y2="323.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<line x1="73.000" y1="300.000" x2="73.000" y2="346.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<circle cx="73.000" cy="323.000" r="21.000" fill="#dcdcdc" stroke="#000" stroke-width="0.2"/>
+<circle cx="73.000" cy="323.000" r="20.300" fill="none" stroke="#000" stroke-width="0.08" stroke-dasharray="0.6 0.4"/>
+<circle cx="73.000" cy="323.000" r="19.600" fill="#fff" stroke="#000" stroke-width="0.15"/>
+<rect x="72.100" y="303.350" width="1.800" height="5.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="73.000" cy="323.000" r="16.000" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<rect x="71.950" y="306.950" width="2.100" height="1.450" fill="#fff" stroke="#000" stroke-width="0.12"/>
+<rect x="72.100" y="303.350" width="1.800" height="5.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="69.160" cy="316.440" r="2.300" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(69.160 317.376) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">1</text>
+<circle cx="76.840" cy="316.440" r="2.300" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(76.840 317.376) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">2</text>
+<circle cx="65.480" cy="323.000" r="2.300" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(65.480 323.936) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">3</text>
+<circle cx="73.000" cy="323.000" r="2.300" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(73.000 323.936) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">4</text>
+<circle cx="80.520" cy="323.000" r="2.300" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(80.520 323.936) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">5</text>
+<circle cx="69.160" cy="329.560" r="2.300" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(69.160 330.496) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">6</text>
+<circle cx="76.840" cy="329.560" r="2.300" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(76.840 330.496) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">7</text>
+<text transform="translate(73.000 348.064) scale(0.1)" font-family="Arial" font-size="24.0" text-anchor="middle" font-weight="bold">7P</text>
+<line x1="100.000" y1="323.000" x2="146.000" y2="323.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<line x1="123.000" y1="300.000" x2="123.000" y2="346.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<circle cx="123.000" cy="323.000" r="21.000" fill="#dcdcdc" stroke="#000" stroke-width="0.2"/>
+<circle cx="123.000" cy="323.000" r="20.300" fill="none" stroke="#000" stroke-width="0.08" stroke-dasharray="0.6 0.4"/>
+<circle cx="123.000" cy="323.000" r="19.600" fill="#fff" stroke="#000" stroke-width="0.15"/>
+<rect x="122.100" y="303.350" width="1.800" height="5.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="123.000" cy="323.000" r="16.000" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<rect x="121.950" y="306.950" width="2.100" height="1.450" fill="#fff" stroke="#000" stroke-width="0.12"/>
+<rect x="122.100" y="303.350" width="1.800" height="5.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="119.480" cy="314.200" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(119.480 315.136) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">1</text>
+<circle cx="126.520" cy="314.200" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(126.520 315.136) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">2</text>
+<circle cx="114.040" cy="319.800" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(114.040 320.736) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">3</text>
+<circle cx="131.960" cy="319.800" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(131.960 320.736) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">4</text>
+<circle cx="123.000" cy="323.320" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(123.000 324.256) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">5</text>
+<circle cx="114.040" cy="327.000" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(114.040 327.936) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">6</text>
+<circle cx="131.960" cy="327.000" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(131.960 327.936) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">7</text>
+<circle cx="119.480" cy="332.280" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(119.480 333.216) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">8</text>
+<circle cx="126.520" cy="332.280" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(126.520 333.216) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">9</text>
+<text transform="translate(123.000 348.064) scale(0.1)" font-family="Arial" font-size="24.0" text-anchor="middle" font-weight="bold">9P</text>
+<line x1="150.000" y1="323.000" x2="196.000" y2="323.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<line x1="173.000" y1="300.000" x2="173.000" y2="346.000" stroke="#000" stroke-width="0.1" stroke-dasharray="3 0.8 0.6 0.8"/>
+<circle cx="173.000" cy="323.000" r="21.000" fill="#dcdcdc" stroke="#000" stroke-width="0.2"/>
+<circle cx="173.000" cy="323.000" r="20.300" fill="none" stroke="#000" stroke-width="0.08" stroke-dasharray="0.6 0.4"/>
+<circle cx="173.000" cy="323.000" r="19.600" fill="#fff" stroke="#000" stroke-width="0.15"/>
+<rect x="172.100" y="303.350" width="1.800" height="5.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="173.000" cy="323.000" r="16.000" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<rect x="171.950" y="306.950" width="2.100" height="1.450" fill="#fff" stroke="#000" stroke-width="0.12"/>
+<rect x="172.100" y="303.350" width="1.800" height="5.000" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<circle cx="169.640" cy="313.560" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(169.640 314.496) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">1</text>
+<circle cx="176.360" cy="313.560" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(176.360 314.496) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">2</text>
+<circle cx="164.520" cy="317.560" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(164.520 318.496) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">3</text>
+<circle cx="173.000" cy="318.840" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(173.000 319.776) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">4</text>
+<circle cx="181.480" cy="317.560" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(181.480 318.496) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">5</text>
+<circle cx="163.400" cy="324.280" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(163.400 325.216) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">6</text>
+<circle cx="169.640" cy="324.600" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(169.640 325.536) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">7</text>
+<circle cx="176.360" cy="324.600" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(176.360 325.536) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">8</text>
+<circle cx="182.600" cy="324.280" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(182.600 325.216) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">9</text>
+<circle cx="166.920" cy="329.880" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(166.920 330.816) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">10</text>
+<circle cx="173.000" cy="331.960" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(173.000 332.896) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">11</text>
+<circle cx="179.080" cy="329.880" r="2.100" fill="#fff" stroke="#000" stroke-width="0.2"/>
+<text transform="translate(179.080 330.816) scale(0.1)" font-family="Arial" font-size="26.0" text-anchor="middle" font-weight="bold">12</text>
+<text transform="translate(173.000 348.064) scale(0.1)" font-family="Arial" font-size="24.0" text-anchor="middle" font-weight="bold">12P</text>
+<line x1="3.000" y1="352.000" x2="207.000" y2="352.000" stroke="#000" stroke-width="0.08"/>
+</svg>

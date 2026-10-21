@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="382" viewBox="0 0 100.0 63.6">
+<rect width="100.0" height="63.6" fill="#fff"/>
+<text x="3.000" y="5.000" font-family="Arial" font-size="2.0" text-anchor="start" dominant-baseline="middle" font-weight="bold">JST XH — XHP-2 … XHP-7 (passo 2.5 mm)</text>
+<text x="5.000" y="10.000" font-family="Arial" font-size="2.0" text-anchor="start" dominant-baseline="middle" font-weight="bold">XHP-2</text>
+<rect x="8.000" y="19.550" width="6.900" height="6.700" fill="#f5f5f5" stroke="#000" stroke-width="0.2" />
+<line x1="8.000" y1="20.250" x2="14.900" y2="20.250" stroke="#000" stroke-width="0.12" />
+<line x1="8.000" y1="25.550" x2="14.900" y2="25.550" stroke="#000" stroke-width="0.12" />
+<rect x="8.500" y="21.050" width="2.200" height="1.200" fill="#fff" stroke="#000" stroke-width="0.12" />
+<polygon points="10.700,21.050 9.700,21.650 10.700,22.250" fill="#dcdcdc" stroke="#000" stroke-width="0.08"/>
+<rect x="15.750" y="21.000" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12" />
+<rect x="8.500" y="23.550" width="2.200" height="1.200" fill="#fff" stroke="#000" stroke-width="0.12" />
+<polygon points="10.700,23.550 9.700,24.150 10.700,24.750" fill="#dcdcdc" stroke="#000" stroke-width="0.08"/>
+<rect x="15.750" y="23.500" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12" />
+<rect x="14.900" y="19.250" width="0.850" height="7.300" fill="#dcdcdc" stroke="#000" stroke-width="0.2" />
+<polygon points="7.600,24.150 6.400,23.450 6.400,24.850" fill="#000" stroke="#000" stroke-width="0.05"/>
+<text x="5.000" y="24.150" font-family="Arial" font-size="1.4" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1</text>
+<text x="37.000" y="10.000" font-family="Arial" font-size="2.0" text-anchor="start" dominant-baseline="middle" font-weight="bold">XHP-3</text>
+<rect x="40.000" y="18.300" width="6.900" height="9.200" fill="#f5f5f5" stroke="#000" stroke-width="0.2" />
+<line x1="40.000" y1="19.000" x2="46.900" y2="19.000" stroke="#000" stroke-width="0.12" />
+<line x1="40.000" y1="26.800" x2="46.900" y2="26.800" stroke="#000" stroke-width="0.12" />
+<rect x="40.500" y="19.800" width="2.200" height="1.200" fill="#fff" stroke="#000" stroke-width="0.12" />
+<polygon points="42.700,19.800 41.700,20.400 42.700,21.000" fill="#dcdcdc" stroke="#000" stroke-width="0.08"/>
+<rect x="47.750" y="19.750" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12" />
+<rect x="40.500" y="22.300" width="2.200" height="1.200" fill="#fff" stroke="#000" stroke-width="0.12" />
+<polygon points="42.700,22.300 41.700,22.900 42.700,23.500" fill="#dcdcdc" stroke="#000" stroke-width="0.08"/>
+<rect x="47.750" y="22.250" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12" />
+<rect x="40.500" y="24.800" width="2.200" height="1.200" fill="#fff" stroke="#000" stroke-width="0.12" />
+<polygon points="42.700,24.800 41.700,25.400 42.700,26.000" fill="#dcdcdc" stroke="#000" stroke-width="0.08"/>
+<rect x="47.750" y="24.750" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12" />
+<rect x="46.900" y="18.000" width="0.850" height="9.800" fill="#dcdcdc" stroke="#000" stroke-width="0.2" />
+<polygon points="39.600,25.400 38.400,24.700 38.400,26.100" fill="#000" stroke="#000" stroke-width="0.05"/>
+<text x="37.000" y="25.400" font-family="Arial" font-size="1.4" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1</text>
+<text x="69.000" y="10.000" font-family="Arial" font-size="2.0" text-anchor="start" dominant-baseline="middle" font-weight="bold">XHP-4</text>
+<rect x="72.000" y="17.050" width="6.900" height="11.700" fill="#f5f5f5" stroke="#000" stroke-width="0.2" />
+<line x1="72.000" y1="17.750" x2="78.900" y2="17.750" stroke="#000" stroke-width="0.12" />
+<line x1="72.000" y1="28.050" x2="78.900" y2="28.050" stroke="#000" stroke-width="0.12" />
+<rect x="72.500" y="18.550" width="2.200" height="1.200" fill="#fff" stroke="#000" stroke-width="0.12" />
+<polygon points="74.700,18.550 73.700,19.150 74.700,19.750" fill="#dcdcdc" stroke="#000" stroke-width="0.08"/>
+<rect x="79.750" y="18.500" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12" />
+<rect x="72.500" y="21.050" width="2.200" height="1.200" fill="#fff" stroke="#000" stroke-width="0.12" />
+<polygon points="74.700,21.050 73.700,21.650 74.700,22.250" fill="#dcdcdc" stroke="#000" stroke-width="0.08"/>
+<rect x="79.750" y="21.000" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12" />
+<rect x="72.500" y="23.550" width="2.200" height="1.200" fill="#fff" stroke="#000" stroke-width="0.12" />
+<polygon points="74.700,23.550 73.700,24.150 74.700,24.750" fill="#dcdcdc" stroke="#000" stroke-width="0.08"/>
+<rect x="79.750" y="23.500" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12" />
+<rect x="72.500" y="26.050" width="2.200" height="1.200" fill="#fff" stroke="#000" stroke-width="0.12" />
+<polygon points="74.700,26.050 73.700,26.650 74.700,27.250" fill="#dcdcdc" stroke="#000" stroke-width="0.08"/>
+<rect x="79.750" y="26.000" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12" />
+<rect x="78.900" y="16.750" width="0.850" height="12.300" fill="#dcdcdc" stroke="#000" stroke-width="0.2" />
+<polygon points="71.600,26.650 70.400,25.950 70.400,27.350" fill="#000" stroke="#000" stroke-width="0.05"/>
+<text x="69.000" y="26.650" font-family="Arial" font-size="1.4" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1</text>
+<text x="5.000" y="37.800" font-family="Arial" font-size="2.0" text-anchor="start" dominant-baseline="middle" font-weight="bold">XHP-5</text>
+<rect x="8.000" y="43.600" width="6.900" height="14.200" fill="#f5f5f5" stroke="#000" stroke-width="0.2" />
+<line x1="8.000" y1="44.300" x2="14.900" y2="44.300" stroke="#000" stroke-width="0.12" />
+<line x1="8.000" y1="57.100" x2="14.900" y2="57.100" stroke="#000" stroke-width="0.12" />
+<rect x="8.500" y="45.100" width="2.200" height="1.200" fill="#fff" stroke="#000" stroke-width="0.12" />
+<polygon points="10.700,45.100 9.700,45.700 10.700,46.300" fill="#dcdcdc" stroke="#000" stroke-width="0.08"/>
+<rect x="15.750" y="45.050" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12" />
+<rect x="8.500" y="47.600" width="2.200" height="1.200" fill="#fff" stroke="#000" stroke-width="0.12" />
+<polygon points="10.700,47.600 9.700,48.200 10.700,48.800" fill="#dcdcdc" stroke="#000" stroke-width="0.08"/>
+<rect x="15.750" y="47.550" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12" />
+<rect x="8.500" y="50.100" width="2.200" height="1.200" fill="#fff" stroke="#000" stroke-width="0.12" />
+<polygon points="10.700,50.100 9.700,50.700 10.700,51.300" fill="#dcdcdc" stroke="#000" stroke-width="0.08"/>
+<rect x="15.750" y="50.050" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12" />
+<rect x="8.500" y="52.600" width="2.200" height="1.200" fill="#fff" stroke="#000" stroke-width="0.12" />
+<polygon points="10.700,52.600 9.700,53.200 10.700,53.800" fill="#dcdcdc" stroke="#000" stroke-width="0.08"/>
+<rect x="15.750" y="52.550" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12" />
+<rect x="8.500" y="55.100" width="2.200" height="1.200" fill="#fff" stroke="#000" stroke-width="0.12" />
+<polygon points="10.700,55.100 9.700,55.700 10.700,56.300" fill="#dcdcdc" stroke="#000" stroke-width="0.08"/>
+<rect x="15.750" y="55.050" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12" />
+<rect x="14.900" y="43.300" width="0.850" height="14.800" fill="#dcdcdc" stroke="#000" stroke-width="0.2" />
+<polygon points="7.600,55.700 6.400,55.000 6.400,56.400" fill="#000" stroke="#000" stroke-width="0.05"/>
+<text x="5.000" y="55.700" font-family="Arial" font-size="1.4" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1</text>
+<text x="37.000" y="37.800" font-family="Arial" font-size="2.0" text-anchor="start" dominant-baseline="middle" font-weight="bold">XHP-6</text>
+<rect x="40.000" y="42.350" width="6.900" height="16.700" fill="#f5f5f5" stroke="#000" stroke-width="0.2" />
+<line x1="40.000" y1="43.050" x2="46.900" y2="43.050" stroke="#000" stroke-width="0.12" />
+<line x1="40.000" y1="58.350" x2="46.900" y2="58.350" stroke="#000" stroke-width="0.12" />
+<rect x="40.500" y="43.850" width="2.200" height="1.200" fill="#fff" stroke="#000" stroke-width="0.12" />
+<polygon points="42.700,43.850 41.700,44.450 42.700,45.050" fill="#dcdcdc" stroke="#000" stroke-width="0.08"/>
+<rect x="47.750" y="43.800" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12" />
+<rect x="40.500" y="46.350" width="2.200" height="1.200" fill="#fff" stroke="#000" stroke-width="0.12" />
+<polygon points="42.700,46.350 41.700,46.950 42.700,47.550" fill="#dcdcdc" stroke="#000" stroke-width="0.08"/>
+<rect x="47.750" y="46.300" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12" />
+<rect x="40.500" y="48.850" width="2.200" height="1.200" fill="#fff" stroke="#000" stroke-width="0.12" />
+<polygon points="42.700,48.850 41.700,49.450 42.700,50.050" fill="#dcdcdc" stroke="#000" stroke-width="0.08"/>
+<rect x="47.750" y="48.800" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12" />
+<rect x="40.500" y="51.350" width="2.200" height="1.200" fill="#fff" stroke="#000" stroke-width="0.12" />
+<polygon points="42.700,51.350 41.700,51.950 42.700,52.550" fill="#dcdcdc" stroke="#000" stroke-width="0.08"/>
+<rect x="47.750" y="51.300" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12" />
+<rect x="40.500" y="53.850" width="2.200" height="1.200" fill="#fff" stroke="#000" stroke-width="0.12" />
+<polygon points="42.700,53.850 41.700,54.450 42.700,55.050" fill="#dcdcdc" stroke="#000" stroke-width="0.08"/>
+<rect x="47.750" y="53.800" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12" />
+<rect x="40.500" y="56.350" width="2.200" height="1.200" fill="#fff" stroke="#000" stroke-width="0.12" />
+<polygon points="42.700,56.350 41.700,56.950 42.700,57.550" fill="#dcdcdc" stroke="#000" stroke-width="0.08"/>
+<rect x="47.750" y="56.300" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12" />
+<rect x="46.900" y="42.050" width="0.850" height="17.300" fill="#dcdcdc" stroke="#000" stroke-width="0.2" />
+<polygon points="39.600,56.950 38.400,56.250 38.400,57.650" fill="#000" stroke="#000" stroke-width="0.05"/>
+<text x="37.000" y="56.950" font-family="Arial" font-size="1.4" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1</text>
+<text x="69.000" y="37.800" font-family="Arial" font-size="2.0" text-anchor="start" dominant-baseline="middle" font-weight="bold">XHP-7</text>
+<rect x="72.000" y="41.100" width="6.900" height="19.200" fill="#f5f5f5" stroke="#000" stroke-width="0.2" />
+<line x1="72.000" y1="41.800" x2="78.900" y2="41.800" stroke="#000" stroke-width="0.12" />
+<line x1="72.000" y1="59.600" x2="78.900" y2="59.600" stroke="#000" stroke-width="0.12" />
+<rect x="72.500" y="42.600" width="2.200" height="1.200" fill="#fff" stroke="#000" stroke-width="0.12" />
+<polygon points="74.700,42.600 73.700,43.200 74.700,43.800" fill="#dcdcdc" stroke="#000" stroke-width="0.08"/>
+<rect x="79.750" y="42.550" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12" />
+<rect x="72.500" y="45.100" width="2.200" height="1.200" fill="#fff" stroke="#000" stroke-width="0.12" />
+<polygon points="74.700,45.100 73.700,45.700 74.700,46.300" fill="#dcdcdc" stroke="#000" stroke-width="0.08"/>
+<rect x="79.750" y="45.050" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12" />
+<rect x="72.500" y="47.600" width="2.200" height="1.200" fill="#fff" stroke="#000" stroke-width="0.12" />
+<polygon points="74.700,47.600 73.700,48.200 74.700,48.800" fill="#dcdcdc" stroke="#000" stroke-width="0.08"/>
+<rect x="79.750" y="47.550" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12" />
+<rect x="72.500" y="50.100" width="2.200" height="1.200" fill="#fff" stroke="#000" stroke-width="0.12" />
+<polygon points="74.700,50.100 73.700,50.700 74.700,51.300" fill="#dcdcdc" stroke="#000" stroke-width="0.08"/>
+<rect x="79.750" y="50.050" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12" />
+<rect x="72.500" y="52.600" width="2.200" height="1.200" fill="#fff" stroke="#000" stroke-width="0.12" />
+<polygon points="74.700,52.600 73.700,53.200 74.700,53.800" fill="#dcdcdc" stroke="#000" stroke-width="0.08"/>
+<rect x="79.750" y="52.550" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12" />
+<rect x="72.500" y="55.100" width="2.200" height="1.200" fill="#fff" stroke="#000" stroke-width="0.12" />
+<polygon points="74.700,55.100 73.700,55.700 74.700,56.300" fill="#dcdcdc" stroke="#000" stroke-width="0.08"/>
+<rect x="79.750" y="55.050" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12" />
+<rect x="72.500" y="57.600" width="2.200" height="1.200" fill="#fff" stroke="#000" stroke-width="0.12" />
+<polygon points="74.700,57.600 73.700,58.200 74.700,58.800" fill="#dcdcdc" stroke="#000" stroke-width="0.08"/>
+<rect x="79.750" y="57.550" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12" />
+<rect x="78.900" y="40.800" width="0.850" height="19.800" fill="#dcdcdc" stroke="#000" stroke-width="0.2" />
+<polygon points="71.600,58.200 70.400,57.500 70.400,58.900" fill="#000" stroke="#000" stroke-width="0.05"/>
+<text x="69.000" y="58.200" font-family="Arial" font-size="1.4" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1</text>
+</svg>

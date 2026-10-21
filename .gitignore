@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Build PyInstaller
+build/
+dist/
+
+# Output generati
+demo.pdf
+
+# Progetti e distinte di lavoro (dati reali, non vanno nel repository)
+*.wiresheet
+*.cablegen
+*.pdf
+*.csv
+*.xlsx
+
+# Editor e sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

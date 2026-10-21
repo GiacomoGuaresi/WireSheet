@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="608" height="304" viewBox="0 0 76.0 38.0">
+<rect width="76.0" height="38.0" fill="#fff"/>
+<text x="3.000" y="4.000" font-family="Arial" font-size="2.0" text-anchor="start" dominant-baseline="middle" font-weight="bold">Terminali — puntalino, forcella, faston F, taglio netto</text>
+<text x="3.000" y="9.000" font-family="Arial" font-size="1.8" text-anchor="start" dominant-baseline="middle" font-weight="bold">Puntalino</text>
+<rect x="5.000" y="15.350" width="8.000" height="1.300" fill="#e6e6e6" stroke="#000" stroke-width="0.2"/>
+<path d="M13.000,15.350 L14.000,14.500 L19.200,14.500 L19.400,14.250 L20.000,14.250 L20.000,17.750 L19.400,17.750 L19.200,17.500 L14.000,17.500 L13.000,16.650 Z" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<line x1="19.400" y1="14.250" x2="19.400" y2="17.750" stroke="#000" stroke-width="0.1"/>
+<rect x="20.000" y="15.350" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12"/>
+<text x="39.000" y="9.000" font-family="Arial" font-size="1.8" text-anchor="start" dominant-baseline="middle" font-weight="bold">Forcella</text>
+<path d="M41.800,12.800 L50.500,12.800 L52.000,15.000 L52.000,17.000 L50.500,19.200 L41.800,19.200 L41.000,18.400 L41.000,17.850 L45.150,17.850 Q47.000,17.850 47.000,16.000 Q47.000,14.150 45.150,14.150 L41.000,14.150 L41.000,13.600 Z" fill="#e6e6e6" stroke="#000" stroke-width="0.2"/>
+<path d="M52.000,14.500 L57.500,14.500 Q61.400,14.500 61.400,14.250 L62.000,14.250 L62.000,17.750 L61.400,17.750 Q61.400,17.500 57.500,17.500 L52.000,17.500 Z" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<line x1="61.400" y1="14.250" x2="61.400" y2="17.750" stroke="#000" stroke-width="0.1"/>
+<rect x="62.000" y="15.350" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12"/>
+<text x="3.000" y="23.000" font-family="Arial" font-size="1.8" text-anchor="start" dominant-baseline="middle" font-weight="bold">Faston F 6.3</text>
+<rect x="5.400" y="28.200" width="9.600" height="3.600" fill="#dcdcdc" stroke="#000" stroke-width="0.12"/>
+<line x1="9.000" y1="29.400" x2="11.000" y2="29.400" stroke="#000" stroke-width="0.1"/>
+<line x1="9.000" y1="30.600" x2="11.000" y2="30.600" stroke="#000" stroke-width="0.1"/>
+<line x1="11.000" y1="29.400" x2="11.000" y2="30.600" stroke="#000" stroke-width="0.1"/>
+<path d="M6.000,26.200 L15.000,26.200 L15.000,28.200 L6.000,28.200 Q5.000,28.200 5.000,27.200 Q5.000,26.200 6.000,26.200 Z" fill="#e6e6e6" stroke="#000" stroke-width="0.2"/>
+<path d="M6.000,31.800 L15.000,31.800 L15.000,33.800 L6.000,33.800 Q5.000,33.800 5.000,32.800 Q5.000,31.800 6.000,31.800 Z" fill="#e6e6e6" stroke="#000" stroke-width="0.2"/>
+<polygon points="15.000,26.200 16.500,28.800 16.500,31.200 15.000,33.800" fill="#e6e6e6" stroke="#000" stroke-width="0.2"/>
+<path d="M16.500,28.100 L21.175,28.100 Q24.400,28.100 24.400,27.900 L25.000,27.900 L25.000,32.100 L24.400,32.100 Q24.400,31.900 21.175,31.900 L16.500,31.900 Z" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
+<line x1="24.400" y1="27.900" x2="24.400" y2="32.100" stroke="#000" stroke-width="0.1"/>
+<line x1="17.000" y1="28.100" x2="17.000" y2="31.900" stroke="#000" stroke-width="0.1"/>
+<rect x="25.000" y="29.350" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12"/>
+<text x="39.000" y="23.000" font-family="Arial" font-size="1.8" text-anchor="start" dominant-baseline="middle" font-weight="bold">Taglio netto</text>
+<rect x="41.000" y="29.350" width="0.400" height="1.300" fill="#e6e6e6" stroke="#000" stroke-width="0.12"/>
+<rect x="41.400" y="29.350" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12"/>
+</svg>

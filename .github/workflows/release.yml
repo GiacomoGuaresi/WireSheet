@@ -1,0 +1,62 @@
+name: Release
+
+# Un tag vX.Y.Z crea la release con gli eseguibili per Windows e macOS.
+# Da Actions → Release → "Run workflow" si ottengono solo gli artifact, senza release.
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+            asset: WireSheet-windows-x64.zip
+          - os: macos-latest
+            asset: WireSheet-macos-arm64.zip
+    runs-on: ${{ matrix.os }}
+    env:
+      QT_QPA_PLATFORM: offscreen
+      WIRESHEET_VERSION: ${{ github.ref_type == 'tag' && github.ref_name || '0.0.0' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: python -m pip install -r requirements.txt pyinstaller pillow
+      - run: python -m pytest -q
+      - run: pyinstaller --noconfirm packaging/wiresheet.spec
+
+      - name: Pacchetto Windows
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: Compress-Archive -Path dist/WireSheet.exe -DestinationPath ${{ matrix.asset }}
+
+      - name: Pacchetto macOS
+        if: runner.os == 'macOS'
+        run: ditto -c -k --keepParent dist/WireSheet.app ${{ matrix.asset }}
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.asset }}
+          path: ${{ matrix.asset }}
+
+  release:
+    if: github.ref_type == 'tag'
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          merge-multiple: true
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: WireSheet-*.zip
+          generate_release_notes: true
