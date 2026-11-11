@@ -6,8 +6,8 @@ from PySide6.QtCore import QPointF, QRectF, QSizeF, Qt
 from PySide6.QtGui import QColor, QPainter, QPainterPath, QPolygonF
 
 from wiresheet.colors import COLORS
-from wiresheet.components import end_codes
-from wiresheet.gauges import section_text
+from wiresheet.components import end_codes, terminal_code
+from wiresheet.gauges import section_pair, section_text
 from wiresheet.model import Branch, Cable, End, Wire, branch_title
 from wiresheet.render.symbols import (GM_FAN, INK, TERMINALS, WHITE, connector_height, contact_offsets,
                                      draw_connector, pen, text, text_width)
@@ -79,10 +79,24 @@ def _table_height(cable: Cable) -> float:
     return (2 + len(cable.wires)) * TABLE_ROW
 
 
+def _codes(end: End, wires: list[Wire]) -> list[str]:
+    """Codici sotto l'estremita'; per i puntalini dipendono dalla sezione dei fili."""
+    sections = [pair[0] for pair in (section_pair(w.section_mm2, w.awg) for w in wires) if pair]
+    return end_codes(end.kind, end.positions, end.variant, sections)
+
+
+def _codes_height(cable: Cable) -> float:
+    """Fascia dei codici sotto il cavo: CODES_H, o di piu' se P1 o P2 hanno molte righe."""
+    ends = [cable.p1] if cable.is_branched else [cable.p1, cable.p2]
+    lines = max(len(_codes(end, cable.wires)) for end in ends)
+    return max(CODES_H, 2.5 + lines * CODE_LINE)
+
+
 def cable_size(cable: Cable) -> QSizeF:
     if cable.is_branched:
         return _branched_size(cable)
-    height = NAME_H + LABEL_H + _rows(cable) * ROW + 2 * _body_pad(cable) + CODES_H + _table_height(cable)
+    height = (NAME_H + LABEL_H + _rows(cable) * ROW + 2 * _body_pad(cable) + _codes_height(cable)
+              + _table_height(cable))
     return QSizeF(CABLE_WIDTH, height)
 
 
@@ -114,10 +128,10 @@ def draw_cable(p: QPainter, cable: Cable, x: float, y: float) -> QRectF:
 
     for face, end, outward in ((face1, cable.p1, -1), (face2, cable.p2, +1)):
         cx = face + outward * SIDE / 2
-        for k, line in enumerate(end_codes(end.kind, end.positions, end.variant)):
-            text(p, cx, bottom + 2.5 + k * 2.8, line, FONT, _ALIGN_C)
+        for k, line in enumerate(_codes(end, cable.wires)):
+            text(p, cx, bottom + 2.5 + k * CODE_LINE, line, FONT, _ALIGN_C)
 
-    _draw_wire_list(p, cable, x, bottom + CODES_H, size.width())
+    _draw_wire_list(p, cable, x, bottom + _codes_height(cable), size.width())
     return QRectF(QPointF(x, y), size)
 
 
@@ -247,8 +261,12 @@ def _has_sections(cable: Cable) -> bool:
     return any(w.section_mm2 is not None or w.awg is not None for w in cable.wires)
 
 
-def _end_text(end: End, pin: int | None) -> str:
-    """Estremita' di un filo per la WIRE LIST, es. 'GM-1712/S-7P (pin 1)', 'FLAT CUT'."""
+def _end_text(end: End, pin: int | None, wire: Wire) -> str:
+    """Estremita' di un filo per la WIRE LIST, es. 'GM-1712/S-7P (pin 1)', 'FLAT CUT',
+    'FERRULE 0.5mm² L8 (KST:E0508)' (i terminali per filo dipendono dalla sezione)."""
+    pair = section_pair(wire.section_mm2, wire.awg)
+    if not end.is_connector and pair:
+        return terminal_code(end.kind, pair[0])
     code = end_codes(end.kind, end.positions, end.variant)[0]
     return f"{code} (pin {pin})" if end.is_connector and pin is not None else code
 
@@ -261,13 +279,13 @@ def _wire_list(cable: Cable) -> tuple[list[str], list[list[str]]]:
     rows = []
     for index, branch in enumerate(cable.branches):
         for w in branch.wires:
-            row = [_end_text(cable.p1, w.p1_pin), f"{w.color} ({COLORS[w.color].name_en})",
+            row = [_end_text(cable.p1, w.p1_pin, w), f"{w.color} ({COLORS[w.color].name_en})",
                    f"{w.length_mm:g}mm"]
             if sections:
                 row.append(section_text(w.section_mm2, w.awg) or "-")
             if cable.is_branched:
                 row.append(branch_title(branch.name, index))
-            rows.append(row + [_end_text(branch.end, w.p2_pin)])
+            rows.append(row + [_end_text(branch.end, w.p2_pin, w)])
     return headers, rows
 
 
@@ -353,7 +371,7 @@ def _branch_boxes(cable: Cable) -> list[_BranchBox]:
     for branch in ordered:
         rows = _end_rows(branch.end, len(branch.wires))
         pad = _end_pad(branch.end, rows)
-        codes = end_codes(branch.end.kind, branch.end.positions, branch.end.variant)
+        codes = _codes(branch.end, branch.wires)
         height = BRANCH_LABEL_H + 2 * pad + rows * ROW + len(codes) * CODE_LINE + 1.0
         boxes.append(_BranchBox(indexes[id(branch)], branch, y, y + BRANCH_LABEL_H + pad,
                                 height, codes))
@@ -380,7 +398,7 @@ def _branched_heights(cable: Cable, boxes: list[_BranchBox]) -> tuple[float, flo
 
 def _branched_size(cable: Cable) -> QSizeF:
     body = _branched_heights(cable, _branch_boxes(cable))[2]
-    return QSizeF(CABLE_WIDTH, NAME_H + LABEL_H + body + CODES_H + _table_height(cable))
+    return QSizeF(CABLE_WIDTH, NAME_H + LABEL_H + body + _codes_height(cable) + _table_height(cable))
 
 
 def _draw_branched(p: QPainter, cable: Cable, x: float, y: float) -> QRectF:
@@ -431,8 +449,8 @@ def _draw_branched(p: QPainter, cable: Cable, x: float, y: float) -> QRectF:
 
     _draw_label(p, face1 + SLEEVE_INSET, all_paths, y + NAME_H + 1.0, cable.name, +1)
     _draw_end(p, cable.p1, cable.wires, _p1_rows(cable), face1, p1_top, -1)
-    for k, line in enumerate(end_codes(cable.p1.kind, cable.p1.positions, cable.p1.variant)):
+    for k, line in enumerate(_codes(cable.p1, cable.wires)):
         text(p, face1 - SIDE / 2, bottom + 2.5 + k * CODE_LINE, line, FONT, _ALIGN_C)
 
-    _draw_wire_list(p, cable, x, bottom + CODES_H, size.width())
+    _draw_wire_list(p, cable, x, bottom + _codes_height(cable), size.width())
     return QRectF(QPointF(x, y), size)

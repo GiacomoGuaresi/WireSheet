@@ -99,6 +99,10 @@ def test_wire_list_rows_are_self_explanatory():
     simple = Cable("C", End(EndKind.FORK), End(EndKind.FERRULE), [Wire("BK", 50)])
     assert _wire_list(simple) == (["FROM", "COLOR", "LENGTH", "TO"],
                                   [["FORK", "BK (Black)", "50mm", "FERRULE"]])
+    sized = Cable("C", End(EndKind.FORK), End(EndKind.FERRULE),
+                  [Wire("BK", 50, section_mm2=0.75), Wire("RD", 50, awg=16)])
+    assert [r[-1] for r in _wire_list(sized)[1]] == ["FERRULE 0.75mm² L8 (KST:E7508)",
+                                                    "FERRULE 1.5mm² L8 (KST:E1508)"]
 
 
 def test_long_wire_list_fits_cable_width(app, tmp_path):

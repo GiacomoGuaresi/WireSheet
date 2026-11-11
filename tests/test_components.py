@@ -2,7 +2,7 @@ import math
 
 import pytest
 
-from wiresheet.components import (GM_LAYOUTS, EndKind, end_codes, gm_code, gm_layout, gm_variants,
+from wiresheet.components import (terminal_code, GM_LAYOUTS, EndKind, end_codes, gm_code, gm_layout, gm_variants,
                                  parse_gm_variant,
                                  parse_kind, variant_positions)
 
@@ -69,3 +69,18 @@ def test_new_kinds():
     assert parse_kind("stripped") is EndKind.STRIPPED_12
     assert end_codes(EndKind.STRIPPED_12) == ["STRIPPED 12 mm"]
     assert end_codes(EndKind.FLAT_CUT) == ["FLAT CUT"]
+
+
+@pytest.mark.parametrize("mm2,code", [(0.25, "FERRULE 0.25mm² L8"),
+                                      (0.38, "FERRULE 0.5mm² L8 (KST:E0508)"),
+                                      (1.5, "FERRULE 1.5mm² L8 (KST:E1508)"),
+                                      (4.0, "FERRULE 4mm² L9 (KST:E4009)"),
+                                      (6.0, "FERRULE 6mm² L12 (KST:E6012)"), (25.0, "FERRULE 25mm²")])
+def test_ferrule_code(mm2, code):
+    assert terminal_code(EndKind.FERRULE, mm2) == code
+
+
+def test_ferrule_end_codes():
+    assert end_codes(EndKind.FERRULE) == ["FERRULE"]
+    assert end_codes(EndKind.FERRULE, sections=[1.0, 0.5, 0.5, 0.38]) == [
+        "FERRULE 0.5mm² L8", "KST:E0508", "FERRULE 1mm² L8", "KST:E1008"]
