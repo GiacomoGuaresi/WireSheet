@@ -9,6 +9,7 @@ La pipeline di release usa la sezione della versione del tag come note della Git
 ### Funzionalità
 - Nuovo terminale **Spelato 12 mm** (`STRIPPED 12 mm`): filo libero con 12 mm di conduttore esposto.
 - **Puntalini** con la misura ricavata dalla sezione del filo (DIN 46228-4) e il codice KST, es. `FERRULE 1.5mm² L8` / `KST:E1508`, sotto l'estremità e nella WIRE LIST.
+- Codici KST anche per **forcelle** (`SNYDL1-3.7`…) e **faston F** (`FDNYD2-250`…), scelti dalla sezione del filo.
 
 ### Modifiche
 - Morsettiera 5,08: codice del fornitore `WJ2EDGK-5.08-nP` al posto di `TB 5.08-nP`.

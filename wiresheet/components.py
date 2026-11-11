@@ -26,6 +26,9 @@ TERMINAL_BLOCK_CODE = "WJ2EDGK-5.08-{}P"
 FERRULE_SIZES = [(0.25, 8, ""), (0.34, 8, ""), (0.5, 8, "E0508"), (0.75, 8, "E7508"),
                  (1.0, 8, "E1008"), (1.5, 8, "E1508"), (2.5, 8, "E2508"), (4.0, 9, "E4009"),
                  (6.0, 12, "E6012"), (10.0, 12, "E10-12"), (16.0, 12, "E16-12")]
+# forcelle (fessura 3.7) e faston F 6.3 isolati KST: (sezione massima in mm², codice)
+FORK_KST = [(1.5, "SNYDL1-3.7"), (2.5, "SNYDL2-3.7"), (6.0, "SNYDL5-3.7")]
+FASTON_KST = [(1.5, "FDNYD1.25-250"), (2.5, "FDNYD2-250"), (6.0, "FDNYD5.5-250")]
 
 # connettori la cui variante e' solo il numero di posizioni
 POSITION_RANGES = {EndKind.JST_XH: JST_XH_POSITIONS, EndKind.TERMINAL_BLOCK: TERMINAL_BLOCK_POSITIONS}
@@ -156,15 +159,24 @@ def parse_kind(text: str) -> EndKind | None:
     return _KIND_ALIASES.get(_key(text))
 
 
+def _kst(table: list[tuple[float, str]], mm2: float) -> list[str]:
+    """Codice KST del terminale per la sezione mm2; vuoto se il filo e' troppo grosso."""
+    return next(([f"KST:{code}"] for size, code in table if size >= mm2 - 1e-9), [])
+
+
 def terminal_lines(kind: EndKind, mm2: float) -> list[str]:
     """Terminale per filo adatto alla sezione mm2, con il codice KST se c'e'.
     Il puntalino e' la misura standard uguale o subito piu' grande:
-    FERRULE, 1.5 -> ['FERRULE 1.5mm² L8', 'KST:E1508']."""
+    FERRULE, 1.5 -> ['FERRULE 1.5mm² L8', 'KST:E1508']; FORK, 1.5 -> ['FORK', 'KST:SNYDL1-3.7']."""
     if kind is EndKind.FERRULE:
         for size, length, kst in FERRULE_SIZES:
             if size >= mm2 - 1e-9:
                 return [f"FERRULE {size:g}mm² L{length}"] + [f"KST:{kst}"] * bool(kst)
         return [f"FERRULE {mm2:g}mm²"]
+    if kind is EndKind.FORK:
+        return ["FORK"] + _kst(FORK_KST, mm2)
+    if kind is EndKind.FASTON_F:
+        return ["FASTON F 6.3"] + _kst(FASTON_KST, mm2)
     return end_codes(kind)
 
 
@@ -177,14 +189,14 @@ def terminal_code(kind: EndKind, mm2: float) -> str:
 def end_codes(kind: EndKind, positions: int = 0, variant: str = "",
               sections: list[float] = ()) -> list[str]:
     """Righe di testo che descrivono il componente sotto l'estremita'. `sections` sono le
-    sezioni in mm² dei fili: per i puntalini le righe di ogni misura usata."""
+    sezioni in mm² dei fili: per puntalini, forcelle e faston le righe di ogni misura usata."""
     if kind is EndKind.JST_XH:
         return [f"JST:XHP-{positions}", JST_XH_TERMINAL]
     if kind in GM_LAYOUTS:
         return [gm_code(kind, variant), "PANEL, REAR MOUNT"]
     if kind is EndKind.TERMINAL_BLOCK:
         return [TERMINAL_BLOCK_CODE.format(positions), "PLUGGABLE, SCREW"]
-    if kind is EndKind.FERRULE and sections:
+    if kind in (EndKind.FERRULE, EndKind.FORK, EndKind.FASTON_F) and sections:
         return list(dict.fromkeys(line for mm2 in sorted(sections) for line in terminal_lines(kind, mm2)))
     if kind is EndKind.FERRULE:
         return ["FERRULE"]

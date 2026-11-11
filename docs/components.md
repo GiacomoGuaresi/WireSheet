@@ -10,8 +10,8 @@ Definite in [`wiresheet/components.py`](../wiresheet/components.py).
 | `GM1312`, `GM1712`, `GM2112` | Connettore circolare GM (Hengzhan, tipo Weipu) a pannello, fissaggio posteriore | `GM-2112/S-4P`, `PANEL, REAR MOUNT` |
 | `TERMINAL_BLOCK` | Morsettiera a innesto verde passo 5,08 (tipo Phoenix MSTB), 2–8 posizioni | `WJ2EDGK-5.08-4P`, `PLUGGABLE, SCREW` |
 | `FERRULE` | Puntalino isolato DIN 46228-4 (uno per filo), misura scelta dalla sezione del filo | `FERRULE 1.5mm² L8` + `KST:E1508` per ogni misura; `FERRULE` se i fili non hanno sezione |
-| `FORK` | Forcella M3 isolata (una per filo) | `FORK` |
-| `FASTON_F` | Faston femmina 6,3 isolato (uno per filo) | `FASTON F 6.3` |
+| `FORK` | Forcella M3 isolata (una per filo) | `FORK` + `KST:SNYDL1-3.7` (dalla sezione) |
+| `FASTON_F` | Faston femmina 6,3 isolato (uno per filo) | `FASTON F 6.3` + `KST:FDNYD2-250` (dalla sezione) |
 | `FLAT_CUT` | Taglio netto: filo libero, tagliato a filo dell'isolante, non spelato | `FLAT CUT` |
 | `STRIPPED_12` | Filo libero spelato 12 mm | `STRIPPED 12 mm` |
 
@@ -27,6 +27,17 @@ Il puntalino di ogni filo è la misura standard (`FERRULE_SIZES`) uguale o subit
 | KST | – | – | E0508 | E7508 | E1008 | E1508 | E2508 | E4009 | E6012 | E10-12 | E16-12 |
 
 Sotto l'estremità ogni misura usata ha due righe (`FERRULE 1.5mm² L8`, `KST:E1508`); nella WIRE LIST ogni filo ha la sua su una riga: `FERRULE 1.5mm² L8 (KST:E1508)`. Oltre 16 mm² il codice riporta solo la sezione; per 0,25 e 0,34 mm² il codice KST non è indicato (da verificare a catalogo).
+
+### Forcelle e faston
+
+Il codice KST dipende dalla sezione del filo (`FORK_KST`, `FASTON_KST`); sotto l'estremità c'è una riga per ogni codice usato, nella WIRE LIST `FORK (KST:SNYDL1-3.7)`. Senza sezione resta solo `FORK` / `FASTON F 6.3`.
+
+| Sezione (mm²) | fino a 1,5 | 1,5 – 2,5 | 4 – 6 |
+|---|---|---|---|
+| Forcella (fessura 3,7) | SNYDL1-3.7 | SNYDL2-3.7 | SNYDL5-3.7 |
+| Faston F 6,3 | FDNYD1.25-250 | FDNYD2-250 | FDNYD5.5-250 |
+
+`SNYDL1-3.7` e `FDNYD2-250` vengono dalle tavole del fornitore; gli altri seguono la serie KST e vanno verificati a catalogo.
 
 ### Connettori circolari GM a pannello
 

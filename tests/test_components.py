@@ -80,7 +80,18 @@ def test_ferrule_code(mm2, code):
     assert terminal_code(EndKind.FERRULE, mm2) == code
 
 
+@pytest.mark.parametrize("kind,mm2,code", [
+    (EndKind.FORK, 1.5, "FORK (KST:SNYDL1-3.7)"), (EndKind.FORK, 2.5, "FORK (KST:SNYDL2-3.7)"),
+    (EndKind.FASTON_F, 2.5, "FASTON F 6.3 (KST:FDNYD2-250)"),
+    (EndKind.FASTON_F, 0.5, "FASTON F 6.3 (KST:FDNYD1.25-250)"), (EndKind.FORK, 10.0, "FORK"),
+    (EndKind.FLAT_CUT, 1.0, "FLAT CUT")])
+def test_terminal_code(kind, mm2, code):
+    assert terminal_code(kind, mm2) == code
+
+
 def test_ferrule_end_codes():
     assert end_codes(EndKind.FERRULE) == ["FERRULE"]
     assert end_codes(EndKind.FERRULE, sections=[1.0, 0.5, 0.5, 0.38]) == [
         "FERRULE 0.5mm² L8", "KST:E0508", "FERRULE 1mm² L8", "KST:E1008"]
+    assert end_codes(EndKind.FORK, sections=[2.5, 1.5, 1.5]) == [
+        "FORK", "KST:SNYDL1-3.7", "KST:SNYDL2-3.7"]
