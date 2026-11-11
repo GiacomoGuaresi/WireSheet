@@ -4,11 +4,11 @@
 
 <h1 align="center">WireSheet</h1>
 
-<p align="center"><b>🇮🇹 Italiano</b> · <a href="README.en.md">🇬🇧 English</a></p>
+<p align="center"><b>🇬🇧 English</b> · <a href="README.it.md">🇮🇹 Italiano</a></p>
 
 <p align="center">
-  Programma desktop per disegnare <b>tavole di cablaggio</b> e esportarle in PDF:<br>
-  estremità 1 → fili → estremità 2, con etichette, WIRE LIST e cartiglio.
+  Desktop app to draw <b>cable assembly drawings</b> and export them to PDF:<br>
+  end 1 → wires → end 2, with labels, a WIRE LIST and a title block.
 </p>
 
 <p align="center">
@@ -21,44 +21,47 @@
 
 ---
 
-Descrivi i cavi in una finestra a card (o importali da Excel/CSV) e WireSheet genera un PDF A3 pronto per chi deve cablare: il disegno di ogni cavo con i connettori reali, i colori dei fili, le etichette e la tabella dei collegamenti.
+Describe your cables in a card-based window (or import them from Excel/CSV) and WireSheet produces an A3 PDF ready for whoever builds them: a drawing of each cable with the real connectors, wire colours, labels and the connection table.
+
+> [!NOTE]
+> The user interface and the documentation in [`docs/`](docs/README.md) are in **Italian**. The text on the PDF drawings (WIRE LIST, FROM/TO, title block…) is in English.
 
 <p align="center">
-  <img src="docs/images/main-window.png" width="49%" alt="Finestra principale con la pila di card dei cavi">
-  <img src="docs/images/branched-cable.png" width="40%" alt="Foglio PDF con un cavo a più rami e la sua WIRE LIST">
+  <img src="docs/images/main-window.png" width="49%" alt="Main window with the stack of cable cards">
+  <img src="docs/images/branched-cable.png" width="40%" alt="PDF sheet with a branched cable and its WIRE LIST">
 </p>
 
-## Funzionalità
+## Features
 
-- **Editor a card**: una card per cavo, con estremità P1/P2, miniatura del componente, tabella dei fili (pin, colore, lunghezza, sezione) e validazione in tempo reale.
-- **Cavi a più rami**: un connettore in ingresso e più uscite, ognuna con il proprio componente e la propria etichetta.
-- **Componenti supportati**: JST XH 2–7 poli, connettori circolari GM a pannello (GM-1312, GM-1712, GM-2112), morsettiera a innesto 5,08 da 2 a 8 poli, puntalini, forcelle, faston femmina 6,3, taglio netto.
-- **Colori IEC 60757**, anche bicolore (es. `YE/GN`), e sezioni in mm² e/o AWG con conversione automatica.
-- **Export PDF A3** con cornice, cartiglio (titolo, azienda, progetto, autore, data, revisione) e numerazione delle pagine.
-- **Import/export Excel e CSV**, con template scaricabile: una riga per filo, intestazioni anche in inglese, valori tolleranti (`rosso`/`RD`, `12,5`).
-- **Anteprima live** del singolo cavo o del foglio in cui finirà.
-- **File di progetto** `.wiresheet` (JSON leggibile) con revisione incrementata a ogni salvataggio.
-- **Controllo aggiornamenti**: all'avvio (disattivabile) o dal menu *Aiuto*; se c'è una versione nuova propone di aprire la pagina della release.
+- **Card editor**: one card per cable, with P1/P2 ends, a thumbnail of the component, a wire table (pin, colour, length, cross-section) and live validation.
+- **Branched cables**: one input end and several outputs, each with its own component and label.
+- **Supported components**: JST XH 2–7 pin, GM circular panel connectors (GM-1312, GM-1712, GM-2112), 5.08 mm pluggable terminal blocks 2–8 pole, ferrules, fork terminals, 6.3 mm female faston, flat cut.
+- **IEC 60757 colours**, including two-colour wires (e.g. `YE/GN`), and cross-sections in mm² and/or AWG with automatic conversion.
+- **A3 PDF export** with frame, title block (title, company, project, author, date, revision) and page numbers.
+- **Excel and CSV import/export** with a downloadable template: one row per wire, Italian or English headers, forgiving values (`rosso`/`RD`, `12,5`).
+- **Live preview** of a single cable or of the sheet it will end up on.
+- **Project files** `.wiresheet` (readable JSON) with a revision number that goes up on every save.
+- **Update check**: at startup (can be turned off) or from the *Aiuto* (Help) menu; when a newer version exists it offers to open the release page.
 
 ## Download
 
-Gli eseguibili sono nella pagina [Releases](https://github.com/GiacomoGuaresi/WireSheet/releases/latest):
+Binaries are on the [Releases](https://github.com/GiacomoGuaresi/WireSheet/releases/latest) page:
 
-| Sistema | File |
+| System | File |
 |---|---|
-| Windows 10/11 (x64) | `WireSheet-<versione>-windows-x64.zip`: scompatta la cartella `WireSheet` dove vuoi e avvia `WireSheet.exe` |
-| macOS 11+ (Apple Silicon, M1 e successivi) | `WireSheet-<versione>-macos-arm64.zip`: scompatta e sposta `WireSheet.app` in *Applicazioni* |
+| Windows 10/11 (x64) | `WireSheet-<version>-windows-x64.zip`: extract the `WireSheet` folder anywhere and run `WireSheet.exe` |
+| macOS 11+ (Apple Silicon, M1 or later) | `WireSheet-<version>-macos-arm64.zip`: extract it and move `WireSheet.app` to *Applications* |
 
-Sui Mac con processore Intel, e su Linux, WireSheet si avvia [da sorgente](#avvio-da-sorgente). `SHA256SUMS.txt` contiene i checksum dei file.
+On Intel Macs, and on Linux, run WireSheet [from source](#running-from-source). `SHA256SUMS.txt` lists the file checksums.
 
 > [!NOTE]
-> Gli eseguibili non sono firmati, quindi al primo avvio il sistema chiede conferma:
-> - **Windows**: se SmartScreen blocca l'avvio, scegli *Ulteriori informazioni → Esegui comunque*.
-> - **macOS**: apri `WireSheet.app`, chiudi l'avviso, poi vai in *Impostazioni di Sistema → Privacy e sicurezza* e scegli *Apri comunque*. In alternativa, da Terminale: `xattr -dr com.apple.quarantine /Applications/WireSheet.app`.
+> The binaries are not signed, so the system asks for confirmation the first time:
+> - **Windows**: if SmartScreen blocks the app, choose *More info → Run anyway*.
+> - **macOS**: open `WireSheet.app`, dismiss the warning, then go to *System Settings → Privacy & Security* and choose *Open Anyway*. Or, from Terminal: `xattr -dr com.apple.quarantine /Applications/WireSheet.app`.
 
-## Avvio da sorgente
+## Running from source
 
-Serve Python 3.12 o superiore.
+Requires Python 3.12 or later.
 
 ```bash
 git clone https://github.com/GiacomoGuaresi/WireSheet.git
@@ -69,65 +72,51 @@ python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 .\.venv\Scripts\python.exe -m wiresheet
 
-# macOS
+# macOS / Linux
 .venv/bin/python -m pip install -r requirements.txt
 .venv/bin/python -m wiresheet
 ```
 
-Altri comandi utili:
+Other useful commands:
 
 ```bash
-python -m wiresheet progetto.wiresheet   # apre direttamente un progetto
-python -m wiresheet.demo                 # crea demo.pdf con 10 cavi di esempio
-python -m pytest -q                      # test (anche senza display: piattaforma Qt offscreen)
+python -m wiresheet project.wiresheet   # open a project directly
+python -m wiresheet.demo                # write demo.pdf with 10 sample cables
+python -m pytest -q                     # tests (no display needed: Qt offscreen platform)
 ```
 
-## Build degli eseguibili
+## Building the binaries
 
-Gli eseguibili si creano con [PyInstaller](https://pyinstaller.org/) a partire da [`packaging/wiresheet.spec`](packaging/wiresheet.spec):
+Binaries are built with [PyInstaller](https://pyinstaller.org/) from [`packaging/wiresheet.spec`](packaging/wiresheet.spec):
 
 ```bash
 python -m pip install pyinstaller pillow
-pyinstaller --noconfirm packaging/wiresheet.spec   # → dist/WireSheet/WireSheet.exe oppure dist/WireSheet.app
+pyinstaller --noconfirm packaging/wiresheet.spec   # → dist/WireSheet/WireSheet.exe or dist/WireSheet.app
 ```
 
-PyInstaller non fa cross-compilazione: l'`.exe` si crea su Windows, l'`.app` su macOS. Per controllare un eseguibile senza aprire la finestra c'è lo smoke test `WireSheet --self-test <cartella>`: esporta il PDF demo e il template Excel ed esce con 0 se è tutto a posto.
+PyInstaller does not cross-compile: build the `.exe` on Windows and the `.app` on macOS. To check a binary without opening the window, run the smoke test `WireSheet --self-test <folder>`: it exports the demo PDF and the Excel template and exits with 0 when everything works.
 
-### Pipeline
+### Pipelines
 
-- **CI** ([`ci.yml`](.github/workflows/ci.yml)): a ogni push su `main` e a ogni pull request esegue i test su Windows e macOS.
-- **Release** ([`release.yml`](.github/workflows/release.yml)): al push di un tag `v*` controlla che corrisponda alla versione dell'app, esegue i test, crea gli eseguibili per Windows e macOS, li prova con lo smoke test e pubblica una GitHub Release con gli zip, i checksum e le note prese da [`CHANGELOG.md`](CHANGELOG.md).
+- **CI** ([`ci.yml`](.github/workflows/ci.yml)): runs the tests on Windows and macOS on every push to `main` and every pull request.
+- **Release** ([`release.yml`](.github/workflows/release.yml)): on a `v*` tag it checks the tag matches the app version, runs the tests, builds the Windows and macOS binaries, smoke-tests them and publishes a GitHub Release with the zips, checksums and notes taken from [`CHANGELOG.md`](CHANGELOG.md).
 
-Per una nuova versione: aggiorna `__version__` in [`wiresheet/__init__.py`](wiresheet/__init__.py), aggiungi la sezione in [`CHANGELOG.md`](CHANGELOG.md) e crea il tag corrispondente:
+For a new version: bump `__version__` in [`wiresheet/__init__.py`](wiresheet/__init__.py), add the section to [`CHANGELOG.md`](CHANGELOG.md) and push the matching tag:
 
 ```bash
-git commit -am "Versione 1.0.1" && git push
+git commit -am "Version 1.0.1" && git push
 git tag v1.0.1
 git push origin v1.0.1
 ```
 
-Dalla scheda *Actions* si può anche lanciare *Release* a mano per ottenere gli eseguibili come artifact, senza pubblicare una release.
-
-## Documentazione
-
-La documentazione e l'interfaccia del programma sono in italiano. La documentazione è in [`docs/`](docs/README.md):
-
-| Documento | Contenuto |
-|---|---|
-| [Getting started](docs/getting-started.md) | Installazione, uso della finestra, test |
-| [Architettura](docs/architecture.md) | Struttura del codice e responsabilità dei moduli |
-| [Modello dati](docs/data-model.md) | `Project`, `Cable`, `Branch`, `End`, `Wire`, formato del file di progetto |
-| [Regole di disegno](docs/drawing-rules.md) | Geometria, simboli, testi, impaginazione |
-| [Componenti](docs/components.md) | Connettori, terminali e colori dei fili |
-| [Import Excel/CSV](docs/import-excel-csv.md) | Template, colonne e regole di import |
-| [Roadmap](docs/roadmap.md) | Step completati e idee future |
+From the *Actions* tab you can also run *Release* manually to get the binaries as artifacts without publishing a release.
 
 ## Stack
 
-[Python 3.12](https://www.python.org/) · [PySide6 / Qt 6](https://doc.qt.io/qtforpython-6/) per interfaccia, disegno vettoriale (`QPainter`) e PDF (`QPdfWriter`) · [openpyxl](https://openpyxl.readthedocs.io/) per i file Excel · [pytest](https://pytest.org/) · [PyInstaller](https://pyinstaller.org/) per gli eseguibili.
+[Python 3.12](https://www.python.org/) · [PySide6 / Qt 6](https://doc.qt.io/qtforpython-6/) for the UI, vector drawing (`QPainter`) and PDF (`QPdfWriter`) · [openpyxl](https://openpyxl.readthedocs.io/) for Excel files · [pytest](https://pytest.org/) · [PyInstaller](https://pyinstaller.org/) for the binaries.
 
-> WireSheet si chiamava *CableGen*: i progetti `.cablegen` si aprono ancora.
+> WireSheet used to be called *CableGen*: `.cablegen` projects still open.
 
-## Licenza
+## License
 
 [MIT](LICENSE) © Giacomo Guaresi
