@@ -4,7 +4,7 @@ Tutte le modifiche rilevanti di WireSheet. Formato [Keep a Changelog](https://ke
 
 La pipeline di release usa la sezione della versione del tag come note della GitHub Release.
 
-## [Unreleased]
+## [1.1.0] - 2026-11-11
 
 ### Funzionalità
 - Nuovo terminale **Spelato 12 mm** (`STRIPPED 12 mm`): filo libero con 12 mm di conduttore esposto.
@@ -35,4 +35,5 @@ Prima versione pubblica. Il programma si chiamava *CableGen*: i progetti `.cable
 - macOS Apple Silicon: `WireSheet-1.0.0-macos-arm64.zip`.
 - Gli eseguibili non sono firmati: vedi le istruzioni nel [README](https://github.com/GiacomoGuaresi/WireSheet#download).
 
+[1.1.0]: https://github.com/GiacomoGuaresi/WireSheet/releases/tag/v1.1.0
 [1.0.0]: https://github.com/GiacomoGuaresi/WireSheet/releases/tag/v1.0.0
