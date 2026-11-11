@@ -36,13 +36,17 @@ Descrivi i cavi in una finestra a card (o importali da Excel/CSV) e WireSheet ge
 
 - **Editor a card**: una card per cavo, con estremità P1/P2, miniatura del componente, tabella dei fili (pin, colore, lunghezza, sezione) e validazione in tempo reale.
 - **Cavi a più rami**: un connettore in ingresso e più uscite, ognuna con il proprio componente e la propria etichetta.
-- **Componenti supportati**: JST XH 2–7 poli, connettori circolari GM a pannello (GM-1312, GM-1712, GM-2112), morsettiera a innesto 5,08 da 2 a 8 poli, puntalini, forcelle, faston femmina 6,3, taglio netto.
+- **Componenti supportati**: JST XH 2–7 poli, connettori circolari GM a pannello (GM-1312, GM-1712, GM-2112), morsettiera a innesto 5,08 da 2 a 8 poli, puntalini, forcelle, faston femmina 6,3, taglio netto, filo spelato 12 mm. Puntalini, forcelle e faston prendono la misura dalla sezione del filo e riportano il codice KST.
 - **Colori IEC 60757**, anche bicolore (es. `YE/GN`), e sezioni in mm² e/o AWG con conversione automatica.
 - **Export PDF A3** con cornice, cartiglio (titolo, azienda, progetto, autore, data, revisione) e numerazione delle pagine.
 - **Import/export Excel e CSV**, con template scaricabile: una riga per filo, intestazioni anche in inglese, valori tolleranti (`rosso`/`RD`, `12,5`).
 - **Anteprima live** del singolo cavo o del foglio in cui finirà.
 - **File di progetto** `.wiresheet` (JSON leggibile) con revisione incrementata a ogni salvataggio.
 - **Controllo aggiornamenti**: all'avvio (disattivabile) o dal menu *Aiuto*; se c'è una versione nuova propone di aprire la pagina della release.
+
+## Stato
+
+Stabile e in uso: l'ho scritto per le tavole di cablaggio dei pannelli che mi servono al lavoro, ed è quello che produce oggi. Copre i componenti che uso; quelli nuovi si aggiungono quando servono (vedi la [roadmap](docs/roadmap.md)).
 
 ## Download
 
@@ -131,6 +135,10 @@ La documentazione e l'interfaccia del programma sono in italiano. La documentazi
 [Python 3.12](https://www.python.org/) · [PySide6 / Qt 6](https://doc.qt.io/qtforpython-6/) per interfaccia, disegno vettoriale (`QPainter`) e PDF (`QPdfWriter`) · [openpyxl](https://openpyxl.readthedocs.io/) per i file Excel · [pytest](https://pytest.org/) · [PyInstaller](https://pyinstaller.org/) per gli eseguibili.
 
 > WireSheet si chiamava *CableGen*: i progetti `.cablegen` si aprono ancora.
+
+## Com'è stato costruito
+
+Gran parte del codice è stata scritta con un assistente IA, come mostrano i commit co-firmati. Rileggo ogni riga prima che entri: accelera la scrittura, non sostituisce il sapere perché quel codice è giusto.
 
 ## Licenza
 

@@ -39,13 +39,17 @@ Describe your cables in a card-based window (or import them from Excel/CSV) and 
 
 - **Card editor**: one card per cable, with P1/P2 ends, a thumbnail of the component, a wire table (pin, colour, length, cross-section) and live validation.
 - **Branched cables**: one input end and several outputs, each with its own component and label.
-- **Supported components**: JST XH 2–7 pin, GM circular panel connectors (GM-1312, GM-1712, GM-2112), 5.08 mm pluggable terminal blocks 2–8 pole, ferrules, fork terminals, 6.3 mm female faston, flat cut.
+- **Supported components**: JST XH 2–7 pin, GM circular panel connectors (GM-1312, GM-1712, GM-2112), 5.08 mm pluggable terminal blocks 2–8 pole, ferrules, fork terminals, 6.3 mm female faston, flat cut, 12 mm stripped end. Ferrules, forks and fastons are sized from the wire cross-section and carry their KST part number.
 - **IEC 60757 colours**, including two-colour wires (e.g. `YE/GN`), and cross-sections in mm² and/or AWG with automatic conversion.
 - **A3 PDF export** with frame, title block (title, company, project, author, date, revision) and page numbers.
 - **Excel and CSV import/export** with a downloadable template: one row per wire, Italian or English headers, forgiving values (`rosso`/`RD`, `12,5`).
 - **Live preview** of a single cable or of the sheet it will end up on.
 - **Project files** `.wiresheet` (readable JSON) with a revision number that goes up on every save.
 - **Update check**: at startup (can be turned off) or from the *Aiuto* (Help) menu; when a newer version exists it offers to open the release page.
+
+## Status
+
+Stable and in use: I wrote it for the panel wiring drawings I need at work, and that is what it produces today. It covers the components I use; new ones are added as they come up (see the [roadmap](docs/roadmap.md), in Italian).
 
 ## Download
 
@@ -115,11 +119,29 @@ git push origin v1.0.1
 
 From the *Actions* tab you can also run *Release* manually to get the binaries as artifacts without publishing a release.
 
+## Documentation
+
+The documentation is in [`docs/`](docs/README.md), in Italian:
+
+| Document | Contents |
+|---|---|
+| [Getting started](docs/getting-started.md) | Installation, using the window, tests |
+| [Architecture](docs/architecture.md) | Code layout and what each module is responsible for |
+| [Data model](docs/data-model.md) | `Project`, `Cable`, `Branch`, `End`, `Wire`, project file format |
+| [Drawing rules](docs/drawing-rules.md) | Geometry, symbols, text, page layout |
+| [Components](docs/components.md) | Connectors, terminals and wire colours |
+| [Excel/CSV import](docs/import-excel-csv.md) | Template, columns and import rules |
+| [Roadmap](docs/roadmap.md) | Completed steps and future ideas |
+
 ## Stack
 
 [Python 3.12](https://www.python.org/) · [PySide6 / Qt 6](https://doc.qt.io/qtforpython-6/) for the UI, vector drawing (`QPainter`) and PDF (`QPdfWriter`) · [openpyxl](https://openpyxl.readthedocs.io/) for Excel files · [pytest](https://pytest.org/) · [PyInstaller](https://pyinstaller.org/) for the binaries.
 
 > WireSheet used to be called *CableGen*: `.cablegen` projects still open.
+
+## How it was built
+
+Most of the code was written with an AI assistant, as the co-authored commits show. I read every line before it goes in: it speeds up the writing, it does not replace knowing why the code is right.
 
 ## License
 
