@@ -19,7 +19,7 @@ Una **riga per filo**. Le righe con lo stesso valore in *Cavo* formano un cavo, 
 | Colonna | Obbligatoria | Valori |
 |---|---|---|
 | Cavo | sì | Nome del cavo, es. `CABLE1` |
-| P1 componente | sì, sulla prima riga del cavo | `JST XH`, `GM1312`, `GM1712`, `GM2112`, `Puntalini`, `Forcelle`, `Taglio netto` |
+| P1 componente | sì, sulla prima riga del cavo | `JST XH`, `GM1312`, `GM1712`, `GM2112`, `Puntalini`, `Forcelle`, `Taglio netto`, `Spelato 12 mm` |
 | P1 variante | se P1 è un connettore | JST XH: numero di pin, da 2 a 7. GM: genere + disposizione, es. `S4`, `P7`, `S5A` |
 | Pin P1 | se P1 è un connettore | Pin a cui va il filo |
 | Colore | sì | Sigla (`RD`, `BK`, `YE/GN`…) oppure nome italiano (`Rosso`, `Nero`…) |

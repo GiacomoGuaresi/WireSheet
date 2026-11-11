@@ -6,7 +6,7 @@ Definito in [`wiresheet/model.py`](../wiresheet/model.py).
 
 | Campo | Tipo | Note |
 |---|---|---|
-| `kind` | `EndKind` | `JST_XH`, `GM1312`, `GM1712`, `GM2112`, `TERMINAL_BLOCK`, `FERRULE`, `FORK`, `FASTON_F`, `FLAT_CUT` |
+| `kind` | `EndKind` | `JST_XH`, `GM1312`, `GM1712`, `GM2112`, `TERMINAL_BLOCK`, `FERRULE`, `FORK`, `FASTON_F`, `FLAT_CUT`, `STRIPPED_12` |
 | `positions` | `int` | Numero di pin del connettore. Usato solo per i connettori |
 | `variant` | `str` | Solo connettori GM: genere + disposizione (`S4`, `P5A`…). Vuoto negli altri casi |
 

@@ -1,10 +1,12 @@
-"""Genera drawings/terminals.svg: puntalino, forcella, faston F, taglio netto (scala 1:1, mm).
+"""Genera drawings/terminals.svg: puntalino, forcella, faston F, taglio netto, spelato 12 mm
+(scala 1:1, mm).
 
 Vista dall'alto: terminale a sinistra, filo in uscita a destra (come il JST XH).
 Dimensioni tipiche per filo 0.5-1.5 mm2:
   puntalino DIN 46228-4 0.5 mm2: L 15, tubetto 8 x d1.3, collare d3.0-3.5 (maggiorato)
   forcella M3 isolata rossa:      L 21, linguetta 6.4, fessura 3.7, isolante d3.5
   faston femmina 6.3 isolato:     L 20, larghezza 7.6, isolante ~d4.2
+  spelato:                        conduttore esposto 12 mm
 
 Uso: python drawings/gen_terminals.py drawings/terminals.svg
 """
@@ -86,18 +88,24 @@ def faston_f(x, cy):
     return x + 20
 
 def flat_cut(x, cy):
-    """Taglio netto: filo libero, estremita' tagliata a filo con il conduttore visibile."""
+    """Taglio netto: filo tagliato a filo dell'isolante, senza spelatura; si vede la sezione."""
     rect(x, cy - WIRE_W / 2, 0.4, WIRE_W, METAL, 0.12)
     return x + 0.4
 
-ITEMS = [("Puntalino", ferrule), ("Forcella", fork), ("Faston F 6.3", faston_f), ("Taglio netto", flat_cut)]
+def stripped(x, cy):
+    """Spelato 12 mm: conduttore esposto oltre l'isolante."""
+    rect(x, cy - 0.45, 12.0, 0.9, METAL, 0.12)
+    return x + 12.0
+
+ITEMS = [("Puntalino", ferrule), ("Forcella", fork), ("Faston F 6.3", faston_f), ("Taglio netto", flat_cut),
+         ("Spelato 12 mm", stripped)]
 
 cell_w, cell_h = 36.0, 14.0
 W = 2 * cell_w + 4
-H = 2 * cell_h + 10
+H = 3 * cell_h + 10
 add(f'<svg xmlns="http://www.w3.org/2000/svg" width="{W * 8:.0f}" height="{H * 8:.0f}" viewBox="0 0 {W:.1f} {H:.1f}">')
 add(f'<rect width="{W:.1f}" height="{H:.1f}" fill="#fff"/>')
-text(3, 4, "Terminali — puntalino, forcella, faston F, taglio netto", 2.0, bold=True)
+text(3, 4, "Terminali — puntalino, forcella, faston F, taglio netto, spelato", 2.0, bold=True)
 for k, (name, draw) in enumerate(ITEMS):
     r, c = divmod(k, 2)
     cx = 3 + c * cell_w; cy = 9 + r * cell_h

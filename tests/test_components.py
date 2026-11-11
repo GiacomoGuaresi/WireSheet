@@ -65,3 +65,7 @@ def test_new_kinds():
     assert parse_kind("faston") is EndKind.FASTON_F
     assert end_codes(EndKind.TERMINAL_BLOCK, 3) == ["WJ2EDGK-5.08-3P", "PLUGGABLE, SCREW"]
     assert end_codes(EndKind.FASTON_F) == ["FASTON F 6.3"]
+    assert parse_kind("Spelato 12 mm") is EndKind.STRIPPED_12
+    assert parse_kind("stripped") is EndKind.STRIPPED_12
+    assert end_codes(EndKind.STRIPPED_12) == ["STRIPPED 12 mm"]
+    assert end_codes(EndKind.FLAT_CUT) == ["FLAT CUT"]

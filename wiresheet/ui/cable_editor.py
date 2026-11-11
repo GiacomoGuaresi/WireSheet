@@ -33,7 +33,9 @@ def variant_label(end: End) -> str:
         return f"{end.variant} · {end.positions} pin {GM_GENDERS[end.variant[0]]}"
     if end.is_connector:
         return f"{end.positions} pin"
-    return "Nessun terminale" if end.kind is EndKind.FLAT_CUT else "Un terminale per filo"
+    if end.kind in (EndKind.FLAT_CUT, EndKind.STRIPPED_12):
+        return "Nessun terminale"
+    return "Un terminale per filo"
 
 
 class EndEditor(QWidget):

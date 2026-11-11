@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="608" height="304" viewBox="0 0 76.0 38.0">
-<rect width="76.0" height="38.0" fill="#fff"/>
-<text x="3.000" y="4.000" font-family="Arial" font-size="2.0" text-anchor="start" dominant-baseline="middle" font-weight="bold">Terminali — puntalino, forcella, faston F, taglio netto</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="608" height="416" viewBox="0 0 76.0 52.0">
+<rect width="76.0" height="52.0" fill="#fff"/>
+<text x="3.000" y="4.000" font-family="Arial" font-size="2.0" text-anchor="start" dominant-baseline="middle" font-weight="bold">Terminali — puntalino, forcella, faston F, taglio netto, spelato</text>
 <text x="3.000" y="9.000" font-family="Arial" font-size="1.8" text-anchor="start" dominant-baseline="middle" font-weight="bold">Puntalino</text>
 <rect x="5.000" y="15.350" width="8.000" height="1.300" fill="#e6e6e6" stroke="#000" stroke-width="0.2"/>
 <path d="M13.000,15.350 L14.000,14.500 L19.200,14.500 L19.400,14.250 L20.000,14.250 L20.000,17.750 L19.400,17.750 L19.200,17.500 L14.000,17.500 L13.000,16.650 Z" fill="#f5f5f5" stroke="#000" stroke-width="0.2"/>
@@ -26,4 +26,7 @@
 <text x="39.000" y="23.000" font-family="Arial" font-size="1.8" text-anchor="start" dominant-baseline="middle" font-weight="bold">Taglio netto</text>
 <rect x="41.000" y="29.350" width="0.400" height="1.300" fill="#e6e6e6" stroke="#000" stroke-width="0.12"/>
 <rect x="41.400" y="29.350" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12"/>
+<text x="3.000" y="37.000" font-family="Arial" font-size="1.8" text-anchor="start" dominant-baseline="middle" font-weight="bold">Spelato 12 mm</text>
+<rect x="5.000" y="43.550" width="12.000" height="0.900" fill="#e6e6e6" stroke="#000" stroke-width="0.12"/>
+<rect x="17.000" y="43.350" width="8.000" height="1.300" fill="#c8c8c8" stroke="#000" stroke-width="0.12"/>
 </svg>

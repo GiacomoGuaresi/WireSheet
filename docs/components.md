@@ -12,7 +12,8 @@ Definite in [`wiresheet/components.py`](../wiresheet/components.py).
 | `FERRULE` | Puntalino (uno per filo) | `FERRULE` |
 | `FORK` | Forcella M3 isolata (una per filo) | `FORK` |
 | `FASTON_F` | Faston femmina 6,3 isolato (uno per filo) | `FASTON F 6.3` |
-| `FLAT_CUT` | Taglio netto, filo libero | `FLAT CUT` |
+| `FLAT_CUT` | Taglio netto: filo libero, tagliato a filo dell'isolante, non spelato | `FLAT CUT` |
+| `STRIPPED_12` | Filo libero spelato 12 mm | `STRIPPED 12 mm` |
 
 I disegni di riferimento di ogni componente sono in [`drawings/`](../drawings/), generati dagli script `gen_*.py`; i simboli in `symbols.py` ne riprendono la geometria.
 

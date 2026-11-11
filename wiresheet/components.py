@@ -14,6 +14,7 @@ class EndKind(Enum):
     FORK = "fork"
     FASTON_F = "faston_f"
     FLAT_CUT = "flat_cut"
+    STRIPPED_12 = "stripped_12"
 
 
 JST_XH_POSITIONS = range(2, 8)
@@ -34,6 +35,7 @@ KIND_LABELS = {
     EndKind.FORK: "Forcelle",
     EndKind.FASTON_F: "Faston F",
     EndKind.FLAT_CUT: "Taglio netto",
+    EndKind.STRIPPED_12: "Spelato 12 mm",
 }
 
 # --- connettori circolari GM a pannello (Hengzhan, fissaggio posteriore) ------------
@@ -137,6 +139,10 @@ _KIND_ALIASES = {
     _key("Faston femmina"): EndKind.FASTON_F,
     _key("Flat cut"): EndKind.FLAT_CUT,
     _key("Taglio"): EndKind.FLAT_CUT,
+    _key("Spelato"): EndKind.STRIPPED_12,
+    _key("Spelato 12"): EndKind.STRIPPED_12,
+    _key("Stripped"): EndKind.STRIPPED_12,
+    _key("Stripped 12mm"): EndKind.STRIPPED_12,
 }
 
 
@@ -159,6 +165,8 @@ def end_codes(kind: EndKind, positions: int = 0, variant: str = "") -> list[str]
         return ["FORK"]
     if kind is EndKind.FASTON_F:
         return ["FASTON F 6.3"]
+    if kind is EndKind.STRIPPED_12:
+        return ["STRIPPED 12 mm"]
     return ["FLAT CUT"]
 
 

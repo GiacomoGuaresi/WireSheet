@@ -23,7 +23,8 @@ SHADE_FILL = QColor(220, 220, 220)
 METAL_FILL = QColor(230, 230, 230)
 
 TERMINAL_H = 2.5  # altezza massima dei terminali per filo (puntalino, forcella, faston)
-STRIP_LEN, STRIP_H = 4.0, 0.6  # taglio netto: conduttore esposto (il filo isolato e' alto 0.9)
+STRIP_LEN, STRIP_H = 6.0, 0.6   # spelato: conduttore esposto, a meta' scala (il filo isolato e' alto 0.9)
+CUT_LEN, CUT_H = 0.3, 0.9      # taglio netto: sezione del filo, alta quanto l'isolante
 
 # JST XH: housing XHP, passo 2.5, lunghezza 6.9 + collarino 0.85 sul lato fili
 XH_PITCH, XH_LEN, XH_FLANGE = 2.5, 6.9, 0.85
@@ -339,7 +340,16 @@ def draw_faston_f(p: QPainter, face_x: float, cy: float, outward: int) -> float:
 
 
 def draw_flat_cut(p: QPainter, face_x: float, cy: float, outward: int) -> float:
-    """Taglio netto: il conduttore esposto oltre l'isolante, piu' sottile del filo.
+    """Taglio netto: filo tagliato a filo dell'isolante, senza spelatura; si vede solo
+    la sezione. Restituisce la x della punta."""
+    p.setPen(pen(0.12))
+    p.setBrush(METAL_FILL)
+    p.drawRect(_span_rect(face_x, CUT_LEN, outward, cy, CUT_H))
+    return face_x + outward * CUT_LEN
+
+
+def draw_stripped(p: QPainter, face_x: float, cy: float, outward: int) -> float:
+    """Spelato 12 mm: il conduttore esposto oltre l'isolante, piu' sottile del filo.
     Restituisce la x della punta."""
     p.setPen(pen(0.12))
     p.setBrush(METAL_FILL)
@@ -352,4 +362,5 @@ TERMINALS = {
     EndKind.FORK: draw_fork,
     EndKind.FASTON_F: draw_faston_f,
     EndKind.FLAT_CUT: draw_flat_cut,
+    EndKind.STRIPPED_12: draw_stripped,
 }

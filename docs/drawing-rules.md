@@ -49,7 +49,8 @@ Ogni cavo ha un'etichetta vicino a P1 con il nome del cavo; nei cavi a più rami
 | Puntalino | Tubetto metallico + collare isolante, alto 2,5 mm | colore del filo |
 | Forcella | Linguetta con fessura + isolante, alta 2,5 mm | colore del filo |
 | Faston F | Bordi arrotolati, collo + isolante, alto 2,5 mm | colore del filo |
-| Taglio netto | Il conduttore esposto: rettangolo lungo 4 mm e alto 0,6 mm, più sottile del filo isolato (0,9 mm) | colore del filo |
+| Taglio netto | La sezione del filo: rettangolo metallico lungo 0,3 mm e alto quanto il filo isolato (0,9 mm), nessun conduttore esposto | colore del filo |
+| Spelato 12 mm | Il conduttore esposto: rettangolo lungo 6 mm (metà scala) e alto 0,6 mm, più sottile del filo isolato (0,9 mm) | colore del filo |
 
 I simboli riprendono i disegni di [`drawings/`](../drawings/), ridotti per stare nel passo delle righe.
 
