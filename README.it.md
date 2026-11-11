@@ -28,6 +28,10 @@ Descrivi i cavi in una finestra a card (o importali da Excel/CSV) e WireSheet ge
   <img src="docs/images/branched-cable.png" width="40%" alt="Foglio PDF con un cavo a più rami e la sua WIRE LIST">
 </p>
 
+<p align="center">
+  📄 <a href="docs/examples/wiresheet-demo.pdf"><b>PDF di esempio</b></a>: dieci cavi di esempio su sei fogli A3, come li scrive <code>python -m wiresheet.demo</code>.
+</p>
+
 ## Funzionalità
 
 - **Editor a card**: una card per cavo, con estremità P1/P2, miniatura del componente, tabella dei fili (pin, colore, lunghezza, sezione) e validazione in tempo reale.

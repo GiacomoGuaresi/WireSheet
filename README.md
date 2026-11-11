@@ -31,6 +31,10 @@ Describe your cables in a card-based window (or import them from Excel/CSV) and 
   <img src="docs/images/branched-cable.png" width="40%" alt="PDF sheet with a branched cable and its WIRE LIST">
 </p>
 
+<p align="center">
+  📄 <a href="docs/examples/wiresheet-demo.pdf"><b>Sample PDF</b></a>: ten example cables on six A3 sheets, as written by <code>python -m wiresheet.demo</code>.
+</p>
+
 ## Features
 
 - **Card editor**: one card per cable, with P1/P2 ends, a thumbnail of the component, a wire table (pin, colour, length, cross-section) and live validation.

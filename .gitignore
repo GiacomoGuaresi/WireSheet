@@ -20,6 +20,8 @@ demo.pdf
 *.pdf
 *.csv
 *.xlsx
+# ...tranne il PDF di esempio generato da `python -m wiresheet.demo`
+!docs/examples/*.pdf
 
 # Editor e sistema
 .vscode/
