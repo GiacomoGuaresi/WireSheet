@@ -63,5 +63,5 @@ def test_new_kinds():
     assert parse_kind("terminal block") is EndKind.TERMINAL_BLOCK
     assert parse_kind("Faston F") is EndKind.FASTON_F
     assert parse_kind("faston") is EndKind.FASTON_F
-    assert end_codes(EndKind.TERMINAL_BLOCK, 8) == ["TB 5.08-8P", "PLUGGABLE, SCREW"]
+    assert end_codes(EndKind.TERMINAL_BLOCK, 3) == ["WJ2EDGK-5.08-3P", "PLUGGABLE, SCREW"]
     assert end_codes(EndKind.FASTON_F) == ["FASTON F 6.3"]

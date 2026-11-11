@@ -19,6 +19,7 @@ class EndKind(Enum):
 JST_XH_POSITIONS = range(2, 8)
 JST_XH_TERMINAL = "SXH-001T-P0.6"
 TERMINAL_BLOCK_POSITIONS = range(2, 9)  # morsettiera a innesto passo 5.08 (tipo Phoenix MSTB)
+TERMINAL_BLOCK_CODE = "WJ2EDGK-5.08-{}P"
 
 # connettori la cui variante e' solo il numero di posizioni
 POSITION_RANGES = {EndKind.JST_XH: JST_XH_POSITIONS, EndKind.TERMINAL_BLOCK: TERMINAL_BLOCK_POSITIONS}
@@ -151,7 +152,7 @@ def end_codes(kind: EndKind, positions: int = 0, variant: str = "") -> list[str]
     if kind in GM_LAYOUTS:
         return [gm_code(kind, variant), "PANEL, REAR MOUNT"]
     if kind is EndKind.TERMINAL_BLOCK:
-        return [f"TB 5.08-{positions}P", "PLUGGABLE, SCREW"]
+        return [TERMINAL_BLOCK_CODE.format(positions), "PLUGGABLE, SCREW"]
     if kind is EndKind.FERRULE:
         return ["FERRULE"]
     if kind is EndKind.FORK:

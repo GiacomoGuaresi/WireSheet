@@ -4,6 +4,11 @@ Tutte le modifiche rilevanti di WireSheet. Formato [Keep a Changelog](https://ke
 
 La pipeline di release usa la sezione della versione del tag come note della GitHub Release.
 
+## [Unreleased]
+
+### Modifiche
+- Morsettiera 5,08: codice del fornitore `WJ2EDGK-5.08-nP` al posto di `TB 5.08-nP`.
+
 ## [1.0.0] - 2026-10-21
 
 Prima versione pubblica. Il programma si chiamava *CableGen*: i progetti `.cablegen` si aprono ancora.

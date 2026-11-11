@@ -8,7 +8,7 @@ Definite in [`wiresheet/components.py`](../wiresheet/components.py).
 |---|---|---|
 | `JST_XH` | Connettore JST XH, 2–7 posizioni | `JST:XHP-n`, `SXH-001T-P0.6` |
 | `GM1312`, `GM1712`, `GM2112` | Connettore circolare GM (Hengzhan, tipo Weipu) a pannello, fissaggio posteriore | `GM-2112/S-4P`, `PANEL, REAR MOUNT` |
-| `TERMINAL_BLOCK` | Morsettiera a innesto verde passo 5,08 (tipo Phoenix MSTB), 2–8 posizioni | `TB 5.08-4P`, `PLUGGABLE, SCREW` |
+| `TERMINAL_BLOCK` | Morsettiera a innesto verde passo 5,08 (tipo Phoenix MSTB), 2–8 posizioni | `WJ2EDGK-5.08-4P`, `PLUGGABLE, SCREW` |
 | `FERRULE` | Puntalino (uno per filo) | `FERRULE` |
 | `FORK` | Forcella M3 isolata (una per filo) | `FORK` |
 | `FASTON_F` | Faston femmina 6,3 isolato (uno per filo) | `FASTON F 6.3` |
